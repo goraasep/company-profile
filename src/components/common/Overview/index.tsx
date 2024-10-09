@@ -8,8 +8,8 @@ const Overview: FC = () => {
           src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
           alt="image 3"
           className="h-full w-full object-cover"
-          width={384}
-          height={384}
+          width={500}
+          height={500}
           unoptimized
         />
         {/* <img
