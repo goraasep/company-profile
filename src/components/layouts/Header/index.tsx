@@ -8,12 +8,12 @@ const Header: FC = () => {
   return (
     <div className="flex justify-center bg-gradient-to-r from-light-blue to-light-purple items-center px-20 h-16">
       <div className="grid grid-cols-4 w-full">
-        <div className="col-auto flex gap-5 items-center">
+        <div className="col-1 flex gap-5 items-center">
           <Image src={Logo} alt="logo" height={50}></Image>
           <div className="text-light-cyan font-bold text-4xl">IDINTECH</div>
         </div>
 
-        <div className="col-span-2 flex justify-center gap-10 font-semibold text-light-cyan items-center">
+        <div className="hidden xl:visible col-span-2 xl:flex justify-center gap-10 font-semibold text-light-cyan items-center">
           <Link className=" hover:text-light-purple" href="/">
             Home
           </Link>
@@ -30,8 +30,8 @@ const Header: FC = () => {
             Contact
           </Link>
         </div>
-        <div className="col-auto flex justify-end">
-          <div className="flex justify-center w-60 gap-4 items-center">
+        <div className="hidden xl:visible col-1 xl:flex justify-end">
+          <div className="flex justify-center w-60 gap-4 items-end">
             <FontAwesomeIcon
               className="w-[30px] h-[30px] text-light-cyan animate-bounce"
               icon={faPhoneVolume}
