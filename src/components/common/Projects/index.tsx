@@ -4,8 +4,10 @@ import { FC } from "react";
 const Projects: FC = () => {
   return (
     <div className="flex flex-col items-center">
-      <div className="text-light-purple text-xl font-bold">Our Projects</div>
-      <div className=" text-4xl font-bold ">
+      <div className="text-light-purple text-xl font-bold text-center">
+        Our Projects
+      </div>
+      <div className=" text-4xl font-bold text-center">
         Our Recently Completed Projects
       </div>
       <div className="py-10 grid md:grid-cols-2 lg:grid-cols-3 gap-10">

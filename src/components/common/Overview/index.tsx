@@ -12,15 +12,12 @@ const Overview: FC = () => {
           height={500}
           unoptimized
         />
-        {/* <img
-          src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
-          alt="image 3"
-          className="h-full w-full object-cover"
-        /> */}
       </div>
       <div>
-        <div className="text-light-purple text-xl font-bold">Overview</div>
-        <div className=" text-4xl font-bold">IDINTECH</div>
+        <div className="text-light-purple text-xl font-bold text-center">
+          Overview
+        </div>
+        <div className=" text-4xl font-bold text-center">IDINTECH</div>
         <div className="py-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
           officiis facilis similique aliquam repellat expedita iusto veritatis,

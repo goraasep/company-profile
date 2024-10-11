@@ -13,12 +13,14 @@ import { FC } from "react";
 const Services: FC = () => {
   return (
     <div className="flex flex-col items-center">
-      <div className="text-light-purple text-xl font-bold">Our Services</div>
-      <div className=" text-4xl font-bold ">
+      <div className="text-light-purple text-xl font-bold text-center">
+        Our Services
+      </div>
+      <div className=" text-4xl font-bold text-center ">
         Services Built Specifically For Your Business
       </div>
       <div className="py-10 grid md:grid-cols-3 gap-10">
-        <div className="h-60 bg-white shadow-xl flex flex-col items-center justify-center p-10 rounded-lg gap-4 hover:bg-gradient-to-r hover:bg-light-purple transition duration-500 ease-in-out group">
+        <div className="h-60 bg-white shadow-xl flex flex-col items-center justify-center p-10 rounded-lg gap-4  hover:bg-light-purple transition duration-500 ease-in-out group">
           <FontAwesomeIcon
             className="text-light-purple group-hover:text-white transition duration-500 ease-in-out"
             icon={faCode}
@@ -28,7 +30,7 @@ const Services: FC = () => {
             Details
           </button>
         </div>
-        <div className="h-60 bg-white shadow-xl flex flex-col items-center justify-center p-10 rounded-lg gap-4 hover:bg-gradient-to-r hover:bg-light-purple transition duration-500 ease-in-out group">
+        <div className="h-60 bg-white shadow-xl flex flex-col items-center justify-center p-10 rounded-lg gap-4  hover:bg-light-purple transition duration-500 ease-in-out group">
           <FontAwesomeIcon
             className="text-light-purple group-hover:text-white transition duration-500 ease-in-out"
             icon={faFileCode}
@@ -38,7 +40,7 @@ const Services: FC = () => {
             Details
           </button>
         </div>
-        <div className="h-60 bg-white shadow-xl flex flex-col items-center justify-center p-10 rounded-lg gap-4 hover:bg-gradient-to-r hover:bg-light-purple transition duration-500 ease-in-out group">
+        <div className="h-60 bg-white shadow-xl flex flex-col items-center justify-center p-10 rounded-lg gap-4  hover:bg-light-purple transition duration-500 ease-in-out group">
           <FontAwesomeIcon
             className="text-light-purple group-hover:text-white transition duration-500 ease-in-out"
             icon={faWifi}
@@ -48,7 +50,7 @@ const Services: FC = () => {
             Details
           </button>
         </div>
-        <div className="h-60 bg-white shadow-xl flex flex-col items-center justify-center p-10 rounded-lg gap-4 hover:bg-gradient-to-r hover:bg-light-purple transition duration-500 ease-in-out group">
+        <div className="h-60 bg-white shadow-xl flex flex-col items-center justify-center p-10 rounded-lg gap-4  hover:bg-light-purple transition duration-500 ease-in-out group">
           <FontAwesomeIcon
             className="text-light-purple group-hover:text-white transition duration-500 ease-in-out"
             icon={faIndustry}
@@ -58,7 +60,7 @@ const Services: FC = () => {
             Details
           </button>
         </div>
-        <div className="h-60 bg-white shadow-xl flex flex-col items-center justify-center p-10 rounded-lg gap-4 hover:bg-gradient-to-r hover:bg-light-purple transition duration-500 ease-in-out group">
+        <div className="h-60 bg-white shadow-xl flex flex-col items-center justify-center p-10 rounded-lg gap-4  hover:bg-light-purple transition duration-500 ease-in-out group">
           <FontAwesomeIcon
             className="text-light-purple group-hover:text-white transition duration-500 ease-in-out"
             icon={faDesktop}
@@ -68,7 +70,7 @@ const Services: FC = () => {
             Details
           </button>
         </div>
-        <div className="h-60 bg-white shadow-xl flex flex-col items-center justify-center p-10 rounded-lg gap-4 hover:bg-gradient-to-r hover:bg-light-purple transition duration-500 ease-in-out group">
+        <div className="h-60 bg-white shadow-xl flex flex-col items-center justify-center p-10 rounded-lg gap-4  hover:bg-light-purple transition duration-500 ease-in-out group">
           <FontAwesomeIcon
             className="text-light-purple group-hover:text-white transition duration-500 ease-in-out"
             icon={faDna}
