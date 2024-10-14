@@ -10,7 +10,6 @@ const Overview: FC = () => {
           className="h-full w-full object-cover"
           width={500}
           height={500}
-          unoptimized
         />
       </div>
       <div>

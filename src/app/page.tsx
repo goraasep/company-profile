@@ -4,6 +4,8 @@ import Services from "@/components/common/Services";
 import Projects from "@/components/common/Projects";
 import Team from "@/components/common/Team";
 import Testimonial from "@/components/common/Testimonial";
+import TestCarousel from "@/components/common/TestCarousel";
+
 export default function Home() {
   return (
     <div className="bg-light-cyan">
@@ -12,6 +14,7 @@ export default function Home() {
         <Overview />
         <Services />
         <Projects />
+        {/* <TestCarousel /> */}
         <Team />
         <Testimonial />
       </div>
