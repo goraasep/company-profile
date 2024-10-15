@@ -97,7 +97,7 @@ const Header: FC = () => {
       </Link>
     </ul>
   );
-  if (isLoading) return "Loading...";
+  // if (isLoading) return "Loading...";
 
   if (error) return "An error has occurred: " + error.message;
   if (!contact) return null;

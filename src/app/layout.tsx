@@ -51,9 +51,9 @@ export default function RootLayout({
           <Header />
         </ClientProvider>
         {children}
-        <ClientProvider>
-          <Footer />
-        </ClientProvider>
+        {/* <ClientProvider> */}
+        <Footer />
+        {/* </ClientProvider> */}
       </body>
     </html>
   );

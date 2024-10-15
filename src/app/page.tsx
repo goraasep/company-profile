@@ -25,9 +25,12 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Home() {
   return (
     <div className="bg-light-cyan">
-      <ClientProvider>
-        <HeroCarousel />
-      </ClientProvider>
+      <div className="h-[calc(100vh-94px)] relative">
+        <ClientProvider>
+          <HeroCarousel />
+        </ClientProvider>
+      </div>
+
       <div className="px-5 md:px-20 flex flex-col gap-10 py-20">
         <ClientProvider>
           <Overview />
