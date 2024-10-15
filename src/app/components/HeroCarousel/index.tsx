@@ -11,7 +11,7 @@ const HeroCarousel: FC = () => {
   if (error) return "An error has occurred: " + error.message;
   if (!heroes || heroes.length === 0) return null;
   return (
-    <Carousel autoplay autoplayDelay={3000} loop className="">
+    <Carousel loop className="">
       {heroes.map((hero) => (
         <div className="relative h-full w-full" key={hero.id}>
           <Image
