@@ -21,7 +21,7 @@ import { MobileNav, Typography, IconButton } from "@material-tailwind/react";
 
 const Header: FC = () => {
   const pathname = usePathname();
-  const { isLoading, error, contact } = useContact();
+  const { error, contact } = useContact();
   const [openNav, setOpenNav] = useState(false);
 
   useEffect(() => {
