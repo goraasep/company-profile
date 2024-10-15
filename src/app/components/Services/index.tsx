@@ -1,34 +1,31 @@
 "use client";
 import { Service } from "@/constant/types";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faArrowUpRightFromSquare,
-  faCode,
-  faDesktop,
-  faDna,
-  faFileCode,
-  faIndustry,
-  faWifi,
-  IconName,
-  fas,
-} from "@fortawesome/free-solid-svg-icons";
+import { IconName, fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import { FC, useEffect, useState } from "react";
 library.add(fas);
 const Services: FC = () => {
   const [services, setServices] = useState<Service[]>([]);
+  const [loading, setLoading] = useState(true);
   const fetchServices = async () => {
-    const { data } = await axios.get(
-      `${process.env.NEXT_PUBLIC_BACKEND_URL}services`
-    );
-    // console.log(data);
-    setServices(data as Service[]);
+    try {
+      const { data } = await axios.get(
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}services`
+      );
+      // console.log(data);
+      setServices(data as Service[]);
+    } catch {
+      console.log("Error fetching services");
+    } finally {
+      setLoading(false);
+    }
   };
   useEffect(() => {
     fetchServices();
   }, []);
-  if (services.length === 0) {
+  if (loading) {
     return <div>Loading ....</div>;
   }
   return (

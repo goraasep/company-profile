@@ -1,5 +1,5 @@
 "use client";
-import { FC, useEffect } from "react";
+import { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -11,24 +11,24 @@ import {
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import {
-  faArrowUpRightFromSquare,
-  faCode,
-  faDesktop,
-  faDna,
-  faFileCode,
-  faIndustry,
-  faWifi,
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedin,
-  faSquareXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faArrowUpRightFromSquare,
+//   faCode,
+//   faDesktop,
+//   faDna,
+//   faFileCode,
+//   faIndustry,
+//   faWifi,
+// } from "@fortawesome/free-solid-svg-icons";
+// import {
+//   faFacebook,
+//   faInstagram,
+//   faLinkedin,
+//   faSquareXTwitter,
+// } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 const TestCarousel: FC = () => {
   return (
     <div className="xl:mx-40 py-10">

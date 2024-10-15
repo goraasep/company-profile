@@ -4,7 +4,7 @@ import Services from "@/app/components/Services";
 import Projects from "@/app/components/Projects";
 import Team from "@/app/components/Team";
 import Testimonial from "@/app/components/Testimonial";
-import TestCarousel from "@/app/components/TestCarousel";
+// import TestCarousel from "@/app/components/TestCarousel";
 
 export default function Home() {
   return (
@@ -14,7 +14,6 @@ export default function Home() {
         <Overview />
         <Services />
         <Projects />
-        {/* <TestCarousel /> */}
         <Team />
         <Testimonial />
       </div>

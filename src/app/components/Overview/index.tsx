@@ -6,19 +6,26 @@ import axios from "axios";
 import Link from "next/link";
 const Overview: FC = () => {
   const [overview, setOverview] = useState<OverviewType>();
+  const [loading, setLoading] = useState(true);
   const fetchOverview = async () => {
-    const { data } = await axios.get(
-      `${process.env.NEXT_PUBLIC_BACKEND_URL}overview`
-    );
-    // console.log(data);
-    setOverview(data as OverviewType);
+    try {
+      const { data } = await axios.get(
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}overview`
+      );
+      setOverview(data as OverviewType);
+    } catch {
+      console.log("Error fetching overview");
+    } finally {
+      setLoading(false);
+    }
   };
   useEffect(() => {
     fetchOverview();
   }, []);
-  if (!overview) {
+  if (loading || !overview?.imageUrl) {
     return <div>Loading ....</div>;
   }
+
   return (
     <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
       <div className="flex justify-center">

@@ -49,8 +49,11 @@ export interface Testimonial {
 }
 
 export interface Contact {
-  id: number;
-  title: string;
-  text: string;
-  imageUrl: string;
+  companyName: string;
+  description: string;
+  logoUrl: string;
+  address: string;
+  phone: string;
+  email: string;
+  socials: Social[];
 }

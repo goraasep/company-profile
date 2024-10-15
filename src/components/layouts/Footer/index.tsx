@@ -1,38 +1,52 @@
+"use client";
 import Link from "next/link";
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCaretRight,
   faLocationDot,
   faPhone,
   faEnvelope,
+  IconName,
+  fas,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  faFacebook,
-  faSquareXTwitter,
-  faLinkedin,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
+import { Contact } from "@/constant/types";
+import axios from "axios";
+import { library } from "@fortawesome/fontawesome-svg-core";
+library.add(fab);
+library.add(fas);
 const Footer: FC = () => {
+  const [contact, setContact] = useState<Contact>();
+  const fetchContact = async () => {
+    const { data } = await axios.get(
+      `${process.env.NEXT_PUBLIC_BACKEND_URL}contact`
+    );
+    setContact(data as Contact);
+  };
+  useEffect(() => {
+    fetchContact();
+  }, []);
+  if (!contact) {
+    return <div>Loading ....</div>;
+  }
   return (
     <div className="bg-black text-white px-20 py-10 flex flex-col gap-10">
       <div className="lg:grid lg:grid-cols-5 gap-10">
         <div className="col-span-2 ">
           <div className="flex gap-5 items-center">
             <Image
-              src="/images/idintech.png"
+              src={contact.logoUrl}
               alt="logo"
               width={50}
               height={50}
             ></Image>
-            <div className="text-light-cyan font-bold text-4xl">IDINTECH</div>
+            <div className="text-light-cyan font-bold text-4xl">
+              {contact.companyName}
+            </div>
           </div>
-          <p className="py-5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est sint
-            magnam nisi dolor dolorum maxime vero culpa? Aspernatur sit, ex quo
-            commodi corrupti in ratione amet at possimus officiis quia.
-          </p>
+          <p className="py-5">{contact.description}</p>
         </div>
         <div className="flex lg:items-center flex-col">
           <div className="text-light-purple">Short Links</div>
@@ -87,7 +101,20 @@ const Footer: FC = () => {
         <div className="flex lg:items-center flex-col">
           <div className="text-light-purple">Socials</div>
           <div className="flex flex-col gap-2 py-5 items-start">
-            <Link
+            {contact.socials.map((social, index) => (
+              <Link
+                key={index}
+                className=" hover:text-light-purple flex gap-2 items-center justify-start"
+                href="/"
+              >
+                <FontAwesomeIcon
+                  className="w-[20px] h-[20px] text-light-purple"
+                  icon={["fab", social.icon as IconName]}
+                />
+                {social.text}
+              </Link>
+            ))}
+            {/* <Link
               className=" hover:text-light-purple flex gap-2 items-center justify-start"
               href="/"
             >
@@ -126,7 +153,7 @@ const Footer: FC = () => {
                 icon={faInstagram}
               />
               Instagram
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -138,7 +165,7 @@ const Footer: FC = () => {
                 className="w-[20px] h-[20px] text-light-purple shrink-0"
                 icon={faLocationDot}
               />
-              <div>
+              <div className="text-justify">
                 Jl. Imajinasi No. 123, Kec. Cimanggis, Kota Depok, Jawa Barat.
               </div>
             </div>
@@ -148,7 +175,7 @@ const Footer: FC = () => {
                 className="w-[20px] h-[20px] text-light-purple  shrink-0"
                 icon={faPhone}
               />
-              <div>+123 3124 3234</div>
+              <div>{contact.phone}</div>
             </div>
             <hr className="bg-white w-full" />
             <div className="flex gap-5 items-center justify-start">
@@ -156,7 +183,7 @@ const Footer: FC = () => {
                 className="w-[20px] h-[20px] text-light-purple  shrink-0"
                 icon={faEnvelope}
               />
-              <div>info@idintech.com</div>
+              <div>{contact.email}</div>
             </div>
             <hr className="bg-white w-full" />
           </div>
@@ -164,7 +191,9 @@ const Footer: FC = () => {
       </div>
       <hr className="bg-white" />
       <div>
-        <span>© 2022 IDINTECH, </span>
+        <span>
+          © {new Date().getFullYear()} {contact.companyName},{" "}
+        </span>
         <span className="text-light-blue">All rights reserved.</span>
       </div>
     </div>

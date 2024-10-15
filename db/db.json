@@ -2,13 +2,13 @@
   "hero": [
     {
       "id": 1,
-      "imageUrl": "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
+      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45",
       "title": "Quality Digital Services You Really Need!",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
     },
     {
       "id": 2,
-      "imageUrl": "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
+      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45",
       "title": "An Innovative IT Solutions Agency",
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ad voluptatum dolorum voluptates sint omnis labore aut, accusamus nihil laborum delectus enim temporibus pariatur veritatis?"
     }
@@ -16,7 +16,7 @@
   "overview": {
     "title": "IDINTECH",
     "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!",
-    "imageUrl": "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
+    "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
   },
   "services": [
     {
@@ -54,7 +54,7 @@
     {
       "id": 1,
       "title": "Project 1",
-      "imageUrl": "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
+      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
     }
   ],
@@ -86,7 +86,7 @@
       "id": 2,
       "name": "Jane Doe",
       "role": "CTO",
-      "imageUrl": "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
+      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45",
       "socials": [
         {
           "icon": "facebook",
@@ -110,7 +110,7 @@
       "role": "CEO",
       "stars": 5,
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!",
-      "imageUrl": "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
+      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
     },
     {
       "id": 2,
@@ -118,10 +118,13 @@
       "role": "CTO",
       "stars": 4,
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!",
-      "imageUrl": "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
+      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
     }
   ],
   "contact": {
+    "companyName": "IDINTECH",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!",
+    "logoUrl": "/images/idintech.png",
     "address": "123 Main Street, Anytown, USA",
     "phone": "+1 (123) 456-7890",
     "email": "nYX5b@example.com",

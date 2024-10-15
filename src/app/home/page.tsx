@@ -1,5 +1,5 @@
 "use client";
-import { FC, useEffect, useState } from "react";
+import { FC, useState } from "react";
 import Header from "@/components/layouts/Header";
 const Home: FC = () => {
   const [test, setTest] = useState(0);
