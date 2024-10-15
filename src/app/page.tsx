@@ -1,10 +1,10 @@
-import HeroCarousel from "@/components/common/HeroCarousel";
-import Overview from "@/components/common/Overview";
-import Services from "@/components/common/Services";
-import Projects from "@/components/common/Projects";
-import Team from "@/components/common/Team";
-import Testimonial from "@/components/common/Testimonial";
-import TestCarousel from "@/components/common/TestCarousel";
+import HeroCarousel from "@/app/components/HeroCarousel";
+import Overview from "@/app/components/Overview";
+import Services from "@/app/components/Services";
+import Projects from "@/app/components/Projects";
+import Team from "@/app/components/Team";
+import Testimonial from "@/app/components/Testimonial";
+import TestCarousel from "@/app/components/TestCarousel";
 
 export default function Home() {
   return (

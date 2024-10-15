@@ -13,7 +13,6 @@ import {
   faLinkedin,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import Logo from "@/public/images/idintech.png";
 import Image from "next/image";
 const Footer: FC = () => {
   return (
@@ -21,7 +20,12 @@ const Footer: FC = () => {
       <div className="lg:grid lg:grid-cols-5 gap-10">
         <div className="col-span-2 ">
           <div className="flex gap-5 items-center">
-            <Image src={Logo} alt="logo" height={50}></Image>
+            <Image
+              src="/images/idintech.png"
+              alt="logo"
+              width={50}
+              height={50}
+            ></Image>
             <div className="text-light-cyan font-bold text-4xl">IDINTECH</div>
           </div>
           <p className="py-5">
