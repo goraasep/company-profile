@@ -36,7 +36,7 @@ const Header: FC = () => {
       <Link
         className={`${
           pathname === "/" ? "text-light-purple" : "hover:text-light-purple "
-        } flex flex-col gap-1 items-center justify-center`}
+        } flex gap-1 items-baseline`}
         href="/"
       >
         <FontAwesomeIcon icon={faHome} />
@@ -47,7 +47,7 @@ const Header: FC = () => {
           pathname === "/about"
             ? "text-light-purple"
             : "hover:text-light-purple"
-        } flex flex-col gap-1 items-center justify-center`}
+        } flex gap-1 items-baseline`}
         href="/about"
       >
         <FontAwesomeIcon icon={faInfo} />
@@ -58,7 +58,7 @@ const Header: FC = () => {
           pathname === "/service"
             ? "text-light-purple"
             : "hover:text-light-purple"
-        } flex flex-col gap-1 items-center justify-center`}
+        } flex gap-1 items-baseline`}
         href="/service"
       >
         <FontAwesomeIcon icon={faScrewdriverWrench} />
@@ -69,7 +69,7 @@ const Header: FC = () => {
           pathname === "/project"
             ? "text-light-purple"
             : "hover:text-light-purple"
-        } flex flex-col gap-1 items-center justify-center`}
+        } flex gap-1 items-baseline`}
         href="/project"
       >
         <FontAwesomeIcon icon={faDiagramProject} />
@@ -78,7 +78,7 @@ const Header: FC = () => {
       <Link
         className={`${
           pathname === "/team" ? "text-light-purple" : "hover:text-light-purple"
-        } flex flex-col gap-1 items-center justify-center`}
+        } flex gap-1 items-baseline`}
         href="/team"
       >
         <FontAwesomeIcon icon={faPeopleGroup} />
@@ -89,7 +89,7 @@ const Header: FC = () => {
           pathname === "/contact"
             ? "text-light-purple"
             : "hover:text-light-purple"
-        } flex flex-col gap-1 items-center justify-center`}
+        } flex gap-1 items-baseline`}
         href="/contact"
       >
         <FontAwesomeIcon icon={faAddressCard} />

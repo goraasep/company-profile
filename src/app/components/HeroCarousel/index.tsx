@@ -11,15 +11,15 @@ const HeroCarousel: FC = () => {
   if (error) return "An error has occurred: " + error.message;
   if (!heroes || heroes.length === 0) return null;
   return (
-    <div className="h-[calc(100vh-64px)] overflow-hidden">
+    <div className="h-[calc(100vh-94px)] relative">
       <Carousel autoplay autoplayDelay={3000} loop className="">
         {heroes.map((hero) => (
           <div className="relative h-full w-full" key={hero.id}>
             <Image
               src={hero.imageUrl}
               alt="image 3"
-              width={1440}
-              height={800}
+              layout="fill"
+              objectFit="cover"
               className="h-full w-full object-cover"
               priority
             />
