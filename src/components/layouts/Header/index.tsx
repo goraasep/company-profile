@@ -1,25 +1,18 @@
 "use client";
 import Link from "next/link";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import axios from "axios";
-import { Contact } from "@/constant/types";
+
+import useContact from "@/hooks/useContact";
+
 const Header: FC = () => {
-  const [contact, setContact] = useState<Contact>();
-  const fetchContact = async () => {
-    const { data } = await axios.get(
-      `${process.env.NEXT_PUBLIC_BACKEND_URL}contact`
-    );
-    setContact(data as Contact);
-  };
-  useEffect(() => {
-    fetchContact();
-  }, []);
-  if (!contact) {
-    return <div>Loading ....</div>;
-  }
+  const { isLoading, error, contact } = useContact();
+  if (isLoading) return "Loading...";
+
+  if (error) return "An error has occurred: " + error.message;
+  if (!contact) return null;
   return (
     <div className="flex justify-center bg-gradient-to-r from-light-blue to-light-purple items-center px-20 h-16">
       <div className="grid grid-cols-4 w-full">

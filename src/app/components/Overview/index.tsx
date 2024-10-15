@@ -1,31 +1,15 @@
 "use client";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import Image from "next/image";
-import { Overview as OverviewType } from "@/constant/types";
-import axios from "axios";
-import Link from "next/link";
-const Overview: FC = () => {
-  const [overview, setOverview] = useState<OverviewType>();
-  const [loading, setLoading] = useState(true);
-  const fetchOverview = async () => {
-    try {
-      const { data } = await axios.get(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}overview`
-      );
-      setOverview(data as OverviewType);
-    } catch {
-      console.log("Error fetching overview");
-    } finally {
-      setLoading(false);
-    }
-  };
-  useEffect(() => {
-    fetchOverview();
-  }, []);
-  if (loading || !overview?.imageUrl) {
-    return <div>Loading ....</div>;
-  }
 
+import Link from "next/link";
+import useOverview from "@/hooks/useOverview";
+const Overview: FC = () => {
+  const { isLoading, error, overview } = useOverview();
+  if (isLoading) return "Loading...";
+
+  if (error) return "An error has occurred: " + error.message;
+  if (!overview) return null;
   return (
     <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
       <div className="flex justify-center">

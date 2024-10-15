@@ -2,7 +2,7 @@
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -14,8 +14,8 @@ import {
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Testimonial as TestimonialType } from "@/constant/types";
-import axios from "axios";
+
+import useTestimonial from "@/hooks/useTestimonial";
 
 interface StarsComponentProps {
   stars: number;
@@ -35,19 +35,12 @@ const StarsComponent: FC<StarsComponentProps> = ({ stars }) => {
 };
 
 const Testimonial: FC = () => {
-  const [testimonials, setTestimonials] = useState<TestimonialType[]>([]);
-  const fetchTestimonials = async () => {
-    const { data } = await axios.get(
-      `${process.env.NEXT_PUBLIC_BACKEND_URL}testimonial`
-    );
-    setTestimonials(data as TestimonialType[]);
-  };
-  useEffect(() => {
-    fetchTestimonials();
-  }, []);
-  if (testimonials.length === 0) {
-    return <div>Loading ....</div>;
-  }
+  const { isLoading, error, testimonial } = useTestimonial();
+
+  if (isLoading) return "Loading...";
+
+  if (error) return "An error has occurred: " + error.message;
+  if (!testimonial || testimonial.length === 0) return null;
   return (
     <div className="flex flex-col items-center">
       <div className="text-light-purple text-xl font-bold text-center">
@@ -79,7 +72,7 @@ const Testimonial: FC = () => {
           }}
           className="m"
         >
-          {testimonials.map((testimony, index) => (
+          {testimonial.map((testimony, index) => (
             <SwiperSlide key={testimony.id}>
               <div
                 className={`flex flex-col justify-center gap-5 items-center border border-light-purple p-5 ${

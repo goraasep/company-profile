@@ -1,5 +1,5 @@
 "use client";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,24 +13,14 @@ import {
   A11y,
   Autoplay,
 } from "swiper/modules";
-import { Team as TeamType } from "@/constant/types";
-import axios from "axios";
+import useTeam from "@/hooks/useTeam";
 library.add(fab);
 const Team: FC = () => {
-  const [team, setTeam] = useState<TeamType[]>([]);
-  const fetchTeam = async () => {
-    const { data } = await axios.get(
-      `${process.env.NEXT_PUBLIC_BACKEND_URL}team`
-    );
-    // console.log(data);
-    setTeam(data as TeamType[]);
-  };
-  useEffect(() => {
-    fetchTeam();
-  }, []);
-  if (team.length === 0) {
-    return <div>Loading ....</div>;
-  }
+  const { isLoading, error, team } = useTeam();
+  if (isLoading) return "Loading...";
+
+  if (error) return "An error has occurred: " + error.message;
+  if (!team || team.length === 0) return null;
   return (
     <>
       <div className="flex flex-col items-center">

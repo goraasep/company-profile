@@ -1,34 +1,15 @@
 "use client";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import { Carousel, Typography } from "@material-tailwind/react";
 import Image from "next/image";
-import { Hero } from "@/constant/types";
-import axios from "axios";
+import useHero from "@/hooks/useHero";
 
 const HeroCarousel: FC = () => {
-  const [heroes, setHeroes] = useState<Hero[]>([]);
-  const [loading, setLoading] = useState(true);
+  const { isLoading, error, heroes } = useHero();
+  if (isLoading) return "Loading...";
 
-  const fetchHeroes = async () => {
-    try {
-      const { data } = await axios.get(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}hero`
-      );
-      setHeroes(data as Hero[]);
-    } catch (error) {
-      console.error("Error fetching heroes:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchHeroes();
-  }, []);
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+  if (error) return "An error has occurred: " + error.message;
+  if (!heroes || heroes.length === 0) return null;
   return (
     <div className="h-[calc(100vh-64px)] overflow-hidden">
       <Carousel autoplay autoplayDelay={3000} loop className="">
@@ -37,8 +18,10 @@ const HeroCarousel: FC = () => {
             <Image
               src={hero.imageUrl}
               alt="image 3"
+              width={1440}
+              height={800}
               className="h-full w-full object-cover"
-              fill
+              priority
             />
             <div className="absolute inset-0 grid h-full w-full items-end bg-black/75">
               <div className="w-3/4 pl-12 pb-12 md:w-2/4 md:pl-20 md:pb-20 lg:pl-32 lg:pb-32">

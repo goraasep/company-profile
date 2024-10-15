@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -9,24 +9,14 @@ import {
   A11y,
   Autoplay,
 } from "swiper/modules";
-import axios from "axios";
-import { Project } from "@/constant/types";
+import useProjects from "@/hooks/useProjects";
 
 const Projects: FC = () => {
-  const [projects, setProjects] = useState<Project[]>([]);
-  const fetchProjects = async () => {
-    const { data } = await axios.get(
-      `${process.env.NEXT_PUBLIC_BACKEND_URL}projects`
-    );
-    // console.log(data);
-    setProjects(data as Project[]);
-  };
-  useEffect(() => {
-    fetchProjects();
-  }, []);
-  if (projects.length === 0) {
-    return <div>Loading ....</div>;
-  }
+  const { isLoading, error, projects } = useProjects();
+  if (isLoading) return "Loading...";
+
+  if (error) return "An error has occurred: " + error.message;
+  if (!projects || projects.length === 0) return null;
   return (
     <>
       <div className="flex flex-col items-center">

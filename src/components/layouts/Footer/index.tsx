@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCaretRight,
@@ -12,25 +12,17 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
-import { Contact } from "@/constant/types";
-import axios from "axios";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
+import useContact from "@/hooks/useContact";
 library.add(fab);
 library.add(fas);
 const Footer: FC = () => {
-  const [contact, setContact] = useState<Contact>();
-  const fetchContact = async () => {
-    const { data } = await axios.get(
-      `${process.env.NEXT_PUBLIC_BACKEND_URL}contact`
-    );
-    setContact(data as Contact);
-  };
-  useEffect(() => {
-    fetchContact();
-  }, []);
-  if (!contact) {
-    return <div>Loading ....</div>;
-  }
+  const { isLoading, error, contact } = useContact();
+  if (isLoading) return "Loading...";
+
+  if (error) return "An error has occurred: " + error.message;
+  if (!contact) return null;
   return (
     <div className="bg-black text-white px-20 py-10 flex flex-col gap-10">
       <div className="lg:grid lg:grid-cols-5 gap-10">

@@ -1,33 +1,16 @@
 "use client";
-import { Service } from "@/constant/types";
+import useServices from "@/hooks/useServices";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { IconName, fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import axios from "axios";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 library.add(fas);
 const Services: FC = () => {
-  const [services, setServices] = useState<Service[]>([]);
-  const [loading, setLoading] = useState(true);
-  const fetchServices = async () => {
-    try {
-      const { data } = await axios.get(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}services`
-      );
-      // console.log(data);
-      setServices(data as Service[]);
-    } catch {
-      console.log("Error fetching services");
-    } finally {
-      setLoading(false);
-    }
-  };
-  useEffect(() => {
-    fetchServices();
-  }, []);
-  if (loading) {
-    return <div>Loading ....</div>;
-  }
+  const { isLoading, error, services } = useServices();
+  if (isLoading) return "Loading...";
+
+  if (error) return "An error has occurred: " + error.message;
+  if (!services || services.length === 0) return null;
   return (
     <div className="flex flex-col items-center">
       <div className="text-light-purple text-xl font-bold text-center">
