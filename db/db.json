@@ -53,8 +53,28 @@
   "projects": [
     {
       "id": 1,
-      "title": "Project 1",
-      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45",
+      "title": "Web Development for PT ABCDEFG",
+      "images": [
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+        }
+      ],
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
+    },
+    {
+      "id": 2,
+      "title": "Project Solar Panels for PT ABCDEFG",
+      "images": [
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+        },
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+        },
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+        }
+      ],
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
     }
   ],
@@ -64,6 +84,10 @@
       "name": "John Doe",
       "role": "CEO",
       "imageUrl": "",
+      "email": "nYX5b@example.com",
+      "birthdate": "1990-01-01",
+      "address": "123 Main Street, Anytown, USA",
+      "phone": "+1 (123) 456-7890",
       "socials": [
         {
           "text": "Facebook",
@@ -83,20 +107,27 @@
       ]
     },
     {
-      "id": 2,
+      "id": 1,
       "name": "Jane Doe",
       "role": "CTO",
-      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45",
+      "imageUrl": "",
+      "email": "nYX5b@example.com",
+      "birthdate": "1990-01-01",
+      "address": "123 Main Street, Anytown, USA",
+      "phone": "+1 (123) 456-7890",
       "socials": [
         {
+          "text": "Facebook",
           "icon": "facebook",
           "url": "https://www.facebook.com"
         },
         {
+          "text": "Twitter",
           "icon": "twitter",
           "url": "https://www.twitter.com"
         },
         {
+          "text": "LinkedIn",
           "icon": "linkedin",
           "url": "https://www.linkedin.com"
         }
@@ -145,5 +176,32 @@
         "url": "https://www.linkedin.com"
       }
     ]
-  }
+  },
+  "about": {
+    "title": "IDINTECH",
+    "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45",
+    "history": [
+      {
+        "year": 2021,
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
+      },
+      {
+        "year": 2022,
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
+      },
+      {
+        "year": 2023,
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
+      }
+    ],
+    "culture": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
+  },
+  "messages": [
+    {
+      "id": "95fa",
+      "userName": "sadsa",
+      "message": "asdsadasdsa",
+      "email": "asdsad@asd"
+    }
+  ]
 }

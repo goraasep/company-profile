@@ -27,7 +27,10 @@ const Services: FC = () => {
           >
             <FontAwesomeIcon
               className="text-light-purple group-hover:text-white transition duration-500 ease-in-out w-[100px] h-[100px] "
-              icon={["fas", service.icon as IconName]}
+              icon={[
+                "fas",
+                service.icon ? (service.icon as IconName) : "wrench",
+              ]}
             />
             <div className="font-bold text-center">{service.title}</div>
             <button className="bg-gradient-to-r from-light-blue to-light-purple  rounded-lg px-5 py-2 text-light-cyan font-medium">

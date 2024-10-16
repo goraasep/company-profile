@@ -1,8 +1,12 @@
 export interface Project {
   id: number;
   title: string;
-  imageUrl: string;
+  images: ImageUrl[];
   text: string;
+}
+
+export interface ImageUrl {
+  imageUrl: string;
 }
 
 export interface Hero {
@@ -30,6 +34,10 @@ export interface Team {
   name: string;
   role: string;
   imageUrl: string;
+  email: string;
+  birthdate: string;
+  address: string;
+  phone: string;
   socials: Social[];
 }
 
@@ -56,4 +64,22 @@ export interface Contact {
   phone: string;
   email: string;
   socials: Social[];
+}
+
+export interface About {
+  title: string;
+  imageUrl: string;
+  history: History[];
+  culture: string;
+}
+
+export interface History {
+  year: number;
+  text: string;
+}
+
+export interface Message {
+  userName: string;
+  email: string;
+  message: string;
 }

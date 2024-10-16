@@ -2,26 +2,10 @@ import HeroCarousel from "@/app/components/HeroCarousel";
 import Overview from "@/app/components/Overview";
 import Services from "@/app/components/Services";
 import Projects from "@/app/components/Projects";
-import Team from "@/app/components/Team";
+// import Team from "@/app/components/Team";
 import Testimonial from "@/app/components/Testimonial";
 import ClientProvider from "@/providers/ClientProvider";
-import { Metadata } from "next";
-import axios from "axios";
-export async function generateMetadata(): Promise<Metadata> {
-  const fetchContact = async () => {
-    const { data } = await axios.get(
-      `${process.env.NEXT_PUBLIC_BACKEND_URL}contact`
-    );
-    return data;
-  };
-  const contact = await fetchContact();
-  return {
-    title: contact.companyName,
-    icons: {
-      icon: contact.logoUrl,
-    },
-  };
-}
+
 export default function Home() {
   return (
     <div className="bg-light-cyan">
@@ -36,7 +20,7 @@ export default function Home() {
           <Overview />
           <Services />
           <Projects />
-          <Team />
+          {/* <Team /> */}
           <Testimonial />
         </ClientProvider>
       </div>

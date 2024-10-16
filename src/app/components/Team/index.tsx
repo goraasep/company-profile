@@ -14,6 +14,9 @@ import {
   Autoplay,
 } from "swiper/modules";
 import useTeam from "@/hooks/useTeam";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 library.add(fab);
 const Team: FC = () => {
   const { isLoading, error, team } = useTeam();
@@ -34,13 +37,14 @@ const Team: FC = () => {
       <div className="xl:mx-60 py-10">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          centeredSlides={true}
+          // centeredSlides={true}
+          centerInsufficientSlides={true}
           spaceBetween={40}
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
-          loop={true}
+          // loop={true}
           autoHeight={true}
           autoplay={{ delay: 2000 }}
           breakpoints={{

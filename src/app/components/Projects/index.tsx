@@ -10,7 +10,9 @@ import {
   Autoplay,
 } from "swiper/modules";
 import useProjects from "@/hooks/useProjects";
-
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 const Projects: FC = () => {
   const { isLoading, error, projects } = useProjects();
   if (isLoading) return "Loading...";
@@ -30,13 +32,15 @@ const Projects: FC = () => {
       <div className="xl:mx-40 py-10">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          centeredSlides={true}
+          // centeredSlides={true}
+          centerInsufficientSlides={true}
+          loopAddBlankSlides={true}
           spaceBetween={40}
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
-          loop={true}
+          // loop={true}
           autoHeight={true}
           autoplay={{ delay: 2000 }}
           breakpoints={{
@@ -58,7 +62,11 @@ const Projects: FC = () => {
                   <div className="h-40 w-40 bg-light-blue rounded-lg absolute -top-5 -left-5"></div>
                   <div className="h-40 w-40 bg-light-purple rounded-lg absolute -bottom-5 -right-5"></div>
                   <Image
-                    src={project.imageUrl}
+                    src={
+                      project.images && project.images.length > 0
+                        ? project.images[0].imageUrl
+                        : "/images/project-default-2.jpg"
+                    }
                     alt="image 3"
                     className=" absolute z-20 w-full h-full object-cover"
                     width={384}

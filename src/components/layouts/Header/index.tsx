@@ -17,7 +17,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import useContact from "@/hooks/useContact";
 
-import { MobileNav, Typography, IconButton } from "@material-tailwind/react";
+import { Typography, IconButton, Collapse } from "@material-tailwind/react";
 
 const Header: FC = () => {
   const pathname = usePathname();
@@ -32,7 +32,7 @@ const Header: FC = () => {
   }, []);
 
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-light-cyan text-center">
+    <ul className="mt-2 mb-4 flex flex-col items-center justify-center gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:gap-6 text-light-cyan text-center">
       <Link
         className={`${
           pathname === "/" ? "text-light-purple" : "hover:text-light-purple "
@@ -148,9 +148,9 @@ const Header: FC = () => {
           )}
         </IconButton>
       </div>
-      <MobileNav open={openNav}>
+      <Collapse open={openNav}>
         <div className="container mx-auto">{navList}</div>
-      </MobileNav>
+      </Collapse>
     </div>
   );
 };

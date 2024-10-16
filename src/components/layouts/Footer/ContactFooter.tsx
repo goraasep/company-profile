@@ -22,9 +22,7 @@ const ContactFooter: FC = () => {
             className="w-[20px] h-[20px] text-light-purple shrink-0"
             icon={faLocationDot}
           />
-          <div className="text-justify">
-            Jl. Imajinasi No. 123, Kec. Cimanggis, Kota Depok, Jawa Barat.
-          </div>
+          <div className="text-justify">{contact.address}</div>
         </div>
         <hr className="bg-white w-full" />
         <div className="flex gap-5 items-center justify-start">
