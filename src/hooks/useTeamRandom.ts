@@ -15,8 +15,6 @@ const useTeamRandom = () => {
   } = useQuery({
     queryKey: ["fetchTeamRandom"],
     queryFn: async () => fetchTeamRandom(),
-    staleTime: 60 * 1000,
-    gcTime: 60 * 1000,
   });
   return {
     isLoading,

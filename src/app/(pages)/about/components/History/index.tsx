@@ -58,11 +58,28 @@ export const HistoryDescription: FC = () => {
 
 export const HistoryImage: FC = () => {
   const { isLoading, error, about } = useAbout();
-  if (isLoading) return "Loading...";
+  if (isLoading)
+    return (
+      <Image
+        src=""
+        alt="about"
+        placeholder="blur"
+        width={800}
+        height={800}
+        priority
+      />
+    );
 
   if (error) return "An error has occurred: " + error.message;
   if (!about) return null;
   return (
-    <Image src={about.imageUrl} alt="about" width={800} height={800} priority />
+    <Image
+      src={about.imageUrl}
+      alt="about"
+      placeholder="blur"
+      width={800}
+      height={800}
+      priority
+    />
   );
 };

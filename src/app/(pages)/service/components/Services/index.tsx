@@ -18,36 +18,38 @@ const Services: FC = () => {
   if (error) return "An error has occurred: " + error.message;
   if (!services) return null;
   const loadMore = () => {
-    setCount((prev) => prev + 1);
+    setCount((prev) => prev + 2);
   };
   return (
     <>
-      {services.slice(0, count).map((service) => (
-        <div
-          className="flex flex-col md:flex-row gap-10 items-center bg-white p-5 rounded-2xl w-full shadow-xl"
-          key={service.id}
-        >
-          <div>
-            <FontAwesomeIcon
-              icon={[
-                "fas",
-                service.icon ? (service.icon as IconName) : "wrench",
-              ]}
-              className="h-20 w-20 md:h-40 md:w-40 text-light-purple"
-            />
+      <div className="px-5 md:px-20 grid grid-cols-1 xl:grid-cols-2  gap-10 py-10">
+        {services.slice(0, count).map((service) => (
+          <div
+            className="flex flex-col md:flex-row gap-10 items-center bg-white p-5 rounded-2xl w-full shadow-xl"
+            key={service.id}
+          >
+            <div>
+              <FontAwesomeIcon
+                icon={[
+                  "fas",
+                  service.icon ? (service.icon as IconName) : "wrench",
+                ]}
+                className="h-20 w-20 md:h-40 md:w-40 text-light-purple"
+              />
+            </div>
+            <div className="flex flex-col items-start gap-4">
+              <div className="font-bold text-3xl">{service.title}</div>
+              <div>{truncateText(service.text, 30)}</div>
+              <Link href={`/service/${service.id}`}>
+                <button className="bg-gradient-to-r from-light-blue to-light-purple  rounded-lg px-8 py-3 text-light-cyan font-medium">
+                  Details
+                </button>
+              </Link>
+            </div>
           </div>
-          <div className="flex flex-col items-start gap-4">
-            <div className="font-bold text-3xl">{service.title}</div>
-            <div>{truncateText(service.text, 30)}</div>
-            <Link href={`/service/${service.id}`}>
-              <button className="bg-gradient-to-r from-light-blue to-light-purple  rounded-lg px-8 py-3 text-light-cyan font-medium">
-                Details
-              </button>
-            </Link>
-          </div>
-        </div>
-      ))}
-      <div className="flex justify-center items-center">
+        ))}
+      </div>
+      <div className="flex justify-center items-center pb-10">
         <Button
           className={`${count < services.length ? "" : "hidden"}`}
           onClick={loadMore}

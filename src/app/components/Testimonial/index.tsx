@@ -73,7 +73,7 @@ const Testimonial: FC = () => {
           {testimonial.map((testimony, index) => (
             <SwiperSlide key={testimony.id}>
               <div
-                className={`flex flex-col justify-start gap-5 items-center border border-light-purple p-5 h-[300px] ${
+                className={`flex flex-col justify-start gap-5 items-center border border-light-purple p-5  ${
                   index % 2 === 0 ? "bg-white" : "bg-light-cyan"
                 } w-full`}
               >
