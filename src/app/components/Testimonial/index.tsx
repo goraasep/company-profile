@@ -59,13 +59,13 @@ const Testimonial: FC = () => {
           autoHeight={true}
           autoplay={{ delay: 2000 }}
           breakpoints={{
-            640: {
+            768: {
               slidesPerView: 1,
             },
-            768: {
+            1024: {
               slidesPerView: 2,
             },
-            1024: {
+            1440: {
               slidesPerView: 3,
             },
           }}
@@ -73,7 +73,7 @@ const Testimonial: FC = () => {
           {testimonial.map((testimony, index) => (
             <SwiperSlide key={testimony.id}>
               <div
-                className={`flex flex-col justify-start gap-5 items-center border border-light-purple p-5  ${
+                className={`flex flex-col justify-start gap-5 items-center border border-light-purple p-5 h-[400px] md:h-[300px] ${
                   index % 2 === 0 ? "bg-white" : "bg-light-cyan"
                 } w-full`}
               >
