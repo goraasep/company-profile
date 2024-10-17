@@ -3,6 +3,7 @@ import useServices from "@/hooks/useServices";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { IconName, fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import { FC } from "react";
 library.add(fas);
 const Services: FC = () => {
@@ -33,9 +34,12 @@ const Services: FC = () => {
               ]}
             />
             <div className="font-bold text-center">{service.title}</div>
-            <button className="bg-gradient-to-r from-light-blue to-light-purple  rounded-lg px-5 py-2 text-light-cyan font-medium">
+            <Link
+              href={`/service/${service.id}`}
+              className="bg-gradient-to-r from-light-blue to-light-purple  rounded-lg px-5 py-2 text-light-cyan font-medium"
+            >
               Details
-            </button>
+            </Link>
           </div>
         ))}
       </div>

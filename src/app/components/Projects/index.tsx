@@ -13,6 +13,7 @@ import useProjects from "@/hooks/useProjects";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Link from "next/link";
 const Projects: FC = () => {
   const { isLoading, error, projects } = useProjects();
   if (isLoading) return "Loading...";
@@ -72,9 +73,12 @@ const Projects: FC = () => {
                   />
                   <div className="hidden group-hover:visible  absolute z-30 w-full h-full group-hover:flex justify-center items-center ">
                     <div className="flex flex-col gap-2 bg-gradient-to-r from-light-blue to-light-purple rounded-lg px-5 py-2">
-                      <div className=" text-md font-small text-light-cyan">
-                        Read More
-                      </div>
+                      <Link
+                        href={`/project/${project.id}`}
+                        className=" text-md font-small text-light-cyan"
+                      >
+                        Details
+                      </Link>
                     </div>
                   </div>
                 </div>

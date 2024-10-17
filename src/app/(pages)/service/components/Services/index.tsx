@@ -36,7 +36,7 @@ const Services: FC = () => {
             <div>{truncateText(service.text, 30)}</div>
             <Link href={`/service/${service.id}`}>
               <button className="bg-gradient-to-r from-light-blue to-light-purple  rounded-lg px-8 py-3 text-light-cyan font-medium">
-                Read More
+                Details
               </button>
             </Link>
           </div>
