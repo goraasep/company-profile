@@ -11,17 +11,17 @@ const Overview: FC = () => {
   if (error) return "An error has occurred: " + error.message;
   if (!overview) return null;
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
+    <div className="grid grid-cols-1 xl:grid-cols-3 gap-10">
       <div className="flex justify-center">
         <Image
           src={overview.imageUrl}
           alt="image 3"
-          className="h-full w-full object-cover"
+          className="h-full w-full xl:max-w-[500px] xl:max-h-[500px] object-cover rounded-xl"
           width={500}
           height={500}
         />
       </div>
-      <div>
+      <div className="flex flex-col items-center xl:col-span-2">
         <div className="text-light-purple text-xl font-bold text-center">
           Overview
         </div>
