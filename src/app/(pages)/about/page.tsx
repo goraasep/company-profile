@@ -36,10 +36,20 @@ const About: FC = () => {
           <History />
         </ClientProvider>
       </div>
-      <div className="px-5 md:px-20 flex flex-col gap-10 py-20">
-        <ClientProvider>
-          <Team />
-        </ClientProvider>
+      <div className="px-5 md:px-20 flex flex-col gap-10">
+        <div className="flex flex-col items-center">
+          <div className="text-light-purple text-xl font-bold text-center">
+            Our Team
+          </div>
+          <div className=" text-4xl font-bold text-center">
+            Meet our expert Team
+          </div>
+        </div>
+        <div className="xl:mx-60 py-10">
+          <ClientProvider>
+            <Team />
+          </ClientProvider>
+        </div>
       </div>
     </div>
   );
