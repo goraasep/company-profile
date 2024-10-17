@@ -103,7 +103,7 @@ const Header: FC = () => {
   if (!contact) return null;
 
   return (
-    <div className=" px-4 py-2 lg:px-8 lg:py-4 bg-gradient-to-r from-light-blue to-light-purple">
+    <>
       <div className=" mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
@@ -151,7 +151,7 @@ const Header: FC = () => {
       <Collapse open={openNav}>
         <div className="container mx-auto">{navList}</div>
       </Collapse>
-    </div>
+    </>
   );
 };
 

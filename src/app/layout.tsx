@@ -32,9 +32,12 @@ export default function RootLayout({
       <body
         className={`antialiased flex flex-col justify-between min-h-[100vh]`}
       >
-        <ClientProvider>
-          <Header />
-        </ClientProvider>
+        <div className=" px-4 py-2 lg:px-8 lg:py-4 bg-gradient-to-r from-light-blue to-light-purple">
+          <ClientProvider>
+            <Header />
+          </ClientProvider>
+        </div>
+
         <div className="flex-grow h-full bg-light-cyan">{children}</div>
         <Footer />
       </body>

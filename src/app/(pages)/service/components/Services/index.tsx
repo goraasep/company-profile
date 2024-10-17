@@ -5,19 +5,24 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas, IconName } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Button } from "@material-tailwind/react";
 import Link from "next/link";
-import { FC } from "react";
+import { FC, useState } from "react";
 library.add(fas);
 library.add(fab);
 const Services: FC = () => {
   const { isLoading, error, services } = useServices();
+  const [count, setCount] = useState(2);
   if (isLoading) return "Loading...";
 
   if (error) return "An error has occurred: " + error.message;
   if (!services) return null;
+  const loadMore = () => {
+    setCount((prev) => prev + 1);
+  };
   return (
     <>
-      {services.map((service) => (
+      {services.slice(0, count).map((service) => (
         <div
           className="flex flex-col md:flex-row gap-10 items-center bg-white p-5 rounded-2xl w-full shadow-xl"
           key={service.id}
@@ -42,6 +47,14 @@ const Services: FC = () => {
           </div>
         </div>
       ))}
+      <div className="flex justify-center items-center">
+        <Button
+          className={`${count < services.length ? "" : "hidden"}`}
+          onClick={loadMore}
+        >
+          Load More
+        </Button>
+      </div>
     </>
   );
 };

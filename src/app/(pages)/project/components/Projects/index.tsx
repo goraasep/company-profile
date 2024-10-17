@@ -1,19 +1,23 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { FC } from "react";
-import { Carousel } from "@material-tailwind/react";
+import { FC, useState } from "react";
+import { Button, Carousel } from "@material-tailwind/react";
 import useProjects from "@/hooks/useProjects";
 import truncateText from "@/utils/truncateText";
 const Projects: FC = () => {
   const { isLoading, error, projects } = useProjects();
+  const [count, setCount] = useState(1);
   if (isLoading) return "Loading...";
 
   if (error) return "An error has occurred: " + error.message;
   if (!projects) return null;
+  const loadMore = () => {
+    setCount((prev) => prev + 1);
+  };
   return (
     <>
-      {projects.map((project) => (
+      {projects.slice(0, count).map((project) => (
         <div
           key={project.id}
           className="flex flex-col xl:flex-row gap-10 items-center bg-white p-5 rounded-2xl w-full shadow-xl"
@@ -41,6 +45,12 @@ const Projects: FC = () => {
           </div>
         </div>
       ))}
+      <Button
+        className={`${count < projects.length ? "" : "hidden"} `}
+        onClick={loadMore}
+      >
+        Load More
+      </Button>
     </>
   );
 };
