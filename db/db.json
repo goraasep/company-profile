@@ -193,7 +193,7 @@
       "role": "CEO, Fashion Retail Inc.",
       "stars": 5,
       "text": "TechWizards transformed our online presence. Their e-commerce platform boosted our sales significantly. We couldn't be happier!",
-      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+      "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F1819a21fc6dc436aaff77f82fb8e0201"
     },
     {
       "id": 2,
@@ -201,7 +201,7 @@
       "role": "Director, Healthcare Network",
       "stars": 5,
       "text": "Their healthcare management system streamlined our operations, improving patient care and efficiency. Highly recommend TechWizards!",
-      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+      "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2Fa17893ab38a4437293ac393515396fc8"
     },
     {
       "id": 3,
@@ -209,7 +209,7 @@
       "role": "Marketing Manager, Global Agency",
       "stars": 5,
       "text": "WizardAI's analytics tool has revolutionized our marketing strategy. The insights we get are unparalleled. Thank you, TechWizards!",
-      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+      "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F9feb3f7c0d3241cf92ec211031929110"
     },
     {
       "id": 4,
@@ -217,7 +217,7 @@
       "role": "CTO, Financial Services Ltd.",
       "stars": 5,
       "text": "The secure banking app developed by TechWizards is fantastic. Our customers love the new features, and security is top-notch!",
-      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+      "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2Feb347857306f43f08dbce4b0e051ac2e"
     },
     {
       "id": 5,
@@ -225,7 +225,7 @@
       "role": "Operations Manager, Manufacturing Co.",
       "stars": 5,
       "text": "TechWizards facilitated a seamless cloud migration for us. Our operations are now more efficient, and we’ve cut down costs significantly.",
-      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+      "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F9f0e0711d88b43dc8827354fd6c26bdd"
     },
     {
       "id": 6,
@@ -233,7 +233,7 @@
       "role": "Logistics Coordinator, Supply Chain Solutions",
       "stars": 5,
       "text": "Their blockchain-based supply chain solution brought unmatched transparency and efficiency to our operations",
-      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+      "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F74d1973ca3ab4ff48d4f673a677aa603"
     },
     {
       "id": 7,
@@ -241,7 +241,7 @@
       "role": "CTO, FinTech Innovations",
       "stars": 4,
       "text": "TechWizards Inc. provided us with solid solutions, though the implementation took longer than expected.",
-      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+      "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2Fbf64d7cb5c7c4cae9f728312f795de8d"
     },
     {
       "id": 8,
@@ -249,7 +249,7 @@
       "role": "Product Manager, RetailTech",
       "stars": 2,
       "text": "We faced several technical issues that delayed our launch. The process was quite frustrating.",
-      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+      "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F0470ca55982746c5916a67d5a820bdc2"
     }
   ],
   "contact": {
