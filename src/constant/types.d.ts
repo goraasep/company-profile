@@ -69,6 +69,7 @@ export interface Contact {
 export interface About {
   title: string;
   imageUrl: string;
+  description: string;
   history: History[];
   culture: string;
 }

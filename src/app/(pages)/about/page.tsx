@@ -1,7 +1,12 @@
 import Team from "@/app/components/Team";
 import ClientProvider from "@/providers/ClientProvider";
 import { FC } from "react";
-import { History, HistoryImage, HistoryTitle } from "./components/History";
+import {
+  History,
+  HistoryDescription,
+  HistoryImage,
+  HistoryTitle,
+} from "./components/History";
 const About: FC = () => {
   return (
     <div className="bg-light-cyan">
@@ -22,6 +27,11 @@ const About: FC = () => {
         </ClientProvider>
       </div>
       <div className="flex flex-col gap-5 xl:px-60 py-10">
+        <div className="text-justify indent-10 pb-5 px-5">
+          <ClientProvider>
+            <HistoryDescription />
+          </ClientProvider>
+        </div>
         <ClientProvider>
           <History />
         </ClientProvider>

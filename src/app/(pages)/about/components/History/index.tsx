@@ -34,6 +34,15 @@ export const HistoryTitle: FC = () => {
   );
 };
 
+export const HistoryDescription: FC = () => {
+  const { isLoading, error, about } = useAbout();
+  if (isLoading) return "Loading...";
+
+  if (error) return "An error has occurred: " + error.message;
+  if (!about) return null;
+  return <>{about.description}</>;
+};
+
 export const HistoryImage: FC = () => {
   const { isLoading, error, about } = useAbout();
   if (isLoading) return "Loading...";

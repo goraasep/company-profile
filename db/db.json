@@ -3,67 +3,61 @@
     {
       "id": 1,
       "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45",
-      "title": "Quality Digital Services You Really Need!",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
+      "title": "Innovative Solutions",
+      "text": "At TechWizards Inc., innovation isn't just a buzzword—it's our mantra. We pride ourselves on delivering cutting-edge technology solutions that drive growth and efficiency for our clients, keeping them ahead in the digital age."
     },
     {
       "id": 2,
       "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45",
-      "title": "An Innovative IT Solutions Agency",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ad voluptatum dolorum voluptates sint omnis labore aut, accusamus nihil laborum delectus enim temporibus pariatur veritatis?"
+      "title": "Client-Centric Approach",
+      "text": "Our clients are at the heart of everything we do. We tailor our services to meet their unique needs, ensuring personalized attention and delivering results that exceed expectations. Satisfaction isn't just guaranteed—it's our standard."
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45",
+      "title": "Proven Expertise",
+      "text": "With a team of seasoned professionals and a track record of successful projects across various industries, TechWizards Inc. stands as a beacon of reliability and expertise. Trust us to transform your tech challenges into seamless, scalable solutions."
     }
   ],
   "overview": {
-    "title": "IDINTECH",
-    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!",
+    "title": "TechWizards Inc",
+    "text": "TechWizards Inc. is a cutting-edge IT solutions company dedicated to driving digital transformation and empowering businesses with state-of-the-art technology. Founded on the principles of innovation, integrity, and excellence, we specialize in software development, cloud computing, and cybersecurity, ensuring our clients are always ahead in the digital race.",
     "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
   },
   "services": [
     {
       "id": 1,
-      "title": "Web Development",
+      "title": "Custom Software Development",
       "icon": "code",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
+      "text": " TechWizards Inc. offers bespoke software solutions tailored to meet the unique needs of each client. From initial consultation to deployment and support, we ensure seamless integration and optimal performance, empowering businesses to achieve their goals efficiently."
     },
     {
       "id": 2,
-      "title": "Mobile Development",
-      "icon": "mobile",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
+      "title": "Cybersecurity Solutions",
+      "icon": "shield-halved",
+      "text": "Protecting your digital assets is our priority. We provide comprehensive cybersecurity services, including vulnerability assessments, threat monitoring, and incident response. Our team of experts ensures your business remains secure against ever-evolving cyber threats."
     },
     {
       "id": 3,
-      "title": "Mobile Development",
-      "icon": "mobile",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
-    },
-    {
-      "id": 4,
-      "title": "Mobile Development",
-      "icon": "mobile",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
-    },
-    {
-      "id": 5,
-      "title": "Mobile Development",
-      "icon": "mobile",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
+      "title": "Cloud Computing Services",
+      "icon": "cloud",
+      "text": "Leverage the power of the cloud with TechCloud, our state-of-the-art cloud computing platform. We offer scalable, secure, and cost-effective cloud solutions designed to enhance flexibility and streamline operations, allowing businesses to focus on what they do best."
     }
   ],
   "projects": [
     {
       "id": 1,
-      "title": "Web Development for PT ABCDEFG",
+      "title": "E-Commerce Platform for Fashion Retailer",
       "images": [
         {
           "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
         }
       ],
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
+      "text": "Developed a scalable and user-friendly e-commerce platform for a leading fashion retailer, boosting their online sales by 40% within the first quarter."
     },
     {
       "id": 2,
-      "title": "Project Solar Panels for PT ABCDEFG",
+      "title": "Healthcare Management System",
       "images": [
         {
           "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
@@ -75,7 +69,71 @@
           "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
         }
       ],
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
+      "text": "Created an integrated healthcare management system for a network of clinics, streamlining patient records, appointment scheduling, and billing processes."
+    },
+    {
+      "id": 3,
+      "title": "AI-Driven Marketing Analytics Tool",
+      "images": [
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+        },
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+        },
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+        }
+      ],
+      "text": "Implemented WizardAI for a global marketing agency, enabling them to harness data analytics to drive targeted campaigns and increase ROI by 25%."
+    },
+    {
+      "id": 4,
+      "title": "Secure Banking App",
+      "images": [
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+        },
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+        },
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+        }
+      ],
+      "text": "Launched a mobile banking app for a major financial institution, featuring enhanced security measures and a seamless user experience, significantly reducing fraud incidents."
+    },
+    {
+      "id": 5,
+      "title": "Cloud Migration for Manufacturing Firm",
+      "images": [
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+        },
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+        },
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+        }
+      ],
+      "text": "Facilitated a comprehensive cloud migration for a large manufacturing company, improving their operational efficiency and reducing IT costs by 30%."
+    },
+    {
+      "id": 6,
+      "title": "Blockchain-Based Supply Chain Solution",
+      "images": [
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+        },
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+        },
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+        }
+      ],
+      "text": "Developed a blockchain-based solution for a logistics company, ensuring transparency, traceability, and efficiency across their supply chain operations."
     }
   ],
   "team": [
@@ -137,24 +195,72 @@
   "testimonial": [
     {
       "id": 1,
-      "name": "John Doe",
-      "role": "CEO",
+      "name": "Jane Smith",
+      "role": "CEO, Fashion Retail Inc.",
       "stars": 5,
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!",
+      "text": "TechWizards transformed our online presence. Their e-commerce platform boosted our sales significantly. We couldn't be happier!",
       "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
     },
     {
       "id": 2,
-      "name": "Jane Doe",
-      "role": "CTO",
+      "name": "Dr. Andrew Johnson",
+      "role": "Director, Healthcare Network",
+      "stars": 5,
+      "text": "Their healthcare management system streamlined our operations, improving patient care and efficiency. Highly recommend TechWizards!",
+      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+    },
+    {
+      "id": 3,
+      "name": "Emily Davis",
+      "role": "Marketing Manager, Global Agency",
+      "stars": 5,
+      "text": "WizardAI's analytics tool has revolutionized our marketing strategy. The insights we get are unparalleled. Thank you, TechWizards!",
+      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+    },
+    {
+      "id": 4,
+      "name": "Michael Brown",
+      "role": "CTO, Financial Services Ltd.",
+      "stars": 5,
+      "text": "The secure banking app developed by TechWizards is fantastic. Our customers love the new features, and security is top-notch!",
+      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+    },
+    {
+      "id": 5,
+      "name": "Sarah Wilson",
+      "role": "Operations Manager, Manufacturing Co.",
+      "stars": 5,
+      "text": "TechWizards facilitated a seamless cloud migration for us. Our operations are now more efficient, and we’ve cut down costs significantly.",
+      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+    },
+    {
+      "id": 6,
+      "name": "David Lee",
+      "role": "Logistics Coordinator, Supply Chain Solutions",
+      "stars": 5,
+      "text": "Their blockchain-based supply chain solution brought unmatched transparency and efficiency to our operations",
+      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+    },
+    {
+      "id": 7,
+      "name": "Mark Thompson",
+      "role": "CTO, FinTech Innovations",
       "stars": 4,
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!",
+      "text": "TechWizards Inc. provided us with solid solutions, though the implementation took longer than expected.",
+      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+    },
+    {
+      "id": 8,
+      "name": "James Wright",
+      "role": "Product Manager, RetailTech",
+      "stars": 2,
+      "text": "We faced several technical issues that delayed our launch. The process was quite frustrating.",
       "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
     }
   ],
   "contact": {
-    "companyName": "IDINTECH",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!",
+    "companyName": "TechWizards Inc.",
+    "description": "TechWizards Inc. is a cutting-edge IT solutions company dedicated to driving digital transformation and empowering businesses with state-of-the-art technology.",
     "logoUrl": "/images/idintech.png",
     "address": "123 Main Street, Anytown, USA",
     "phone": "+1 (123) 456-7890",
@@ -178,20 +284,21 @@
     ]
   },
   "about": {
-    "title": "IDINTECH",
+    "title": "TechWizards Inc.",
     "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45",
+    "description": "TechWizards Inc. is a cutting-edge IT solutions company dedicated to driving digital transformation and empowering businesses with state-of-the-art technology. Founded on the principles of innovation, integrity, and excellence, we specialize in software development, cloud computing, and cybersecurity, ensuring our clients are always ahead in the digital race.",
     "history": [
       {
         "year": 2021,
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
+        "text": "TechWizards Inc. was founded by a group of tech enthusiasts and industry veterans with a mission to revolutionize the IT sector. Launched our flagship product, WizardSoft, an all-in-one software management tool for small and medium businesses. Secured our first major contract with a Fortune 500 company, providing bespoke software solutions."
       },
       {
         "year": 2022,
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
+        "text": "Opened our first international office in Singapore to cater to the growing Asian market. Introduced a new line of cybersecurity products to protect businesses from ever-evolving threats. Achieved ISO 27001 certification, ensuring the highest standards of information security management."
       },
       {
         "year": 2023,
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"
+        "text": "Launched TechCloud, our cloud computing platform offering scalable and secure cloud solutions. Formed strategic partnerships with leading tech giants to enhance our service offerings and reach. Celebrated reaching 1,000 corporate clients, marking a significant milestone in our growth journey."
       }
     ],
     "culture": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quaerat nulla aut iure quia aliquam impedit dolor ipsum sit, earum delectus doloremque eos hic ullam!"

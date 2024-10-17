@@ -7,13 +7,12 @@ import ClientProvider from "@/providers/ClientProvider";
 
 export default function Home() {
   return (
-    <div className="bg-light-cyan">
+    <>
       <div className="h-[calc(100vh-94px)] relative">
         <ClientProvider>
           <HeroCarousel />
         </ClientProvider>
       </div>
-
       <div className="px-5 md:px-20 flex flex-col gap-10 py-20">
         <ClientProvider>
           <Overview />
@@ -22,6 +21,6 @@ export default function Home() {
           <Testimonial />
         </ClientProvider>
       </div>
-    </div>
+    </>
   );
 }

@@ -29,14 +29,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>
+      <body
+        className={`antialiased flex flex-col justify-between min-h-[100vh]`}
+      >
         <ClientProvider>
           <Header />
         </ClientProvider>
-        {children}
-        {/* <ClientProvider> */}
+        <div className="flex-grow h-full bg-light-cyan">{children}</div>
         <Footer />
-        {/* </ClientProvider> */}
       </body>
     </html>
   );
