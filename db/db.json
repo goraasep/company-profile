@@ -2,19 +2,19 @@
   "hero": [
     {
       "id": 1,
-      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45",
+      "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2Fc2879ff7a9df4fcca4431a3825580b91",
       "title": "Innovative Solutions",
       "text": "At TechWizards Inc., innovation isn't just a buzzword—it's our mantra. We pride ourselves on delivering cutting-edge technology solutions that drive growth and efficiency for our clients, keeping them ahead in the digital age."
     },
     {
       "id": 2,
-      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45",
+      "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F05ca4975f3394e6188cab6190c97d135",
       "title": "Client-Centric Approach",
       "text": "Our clients are at the heart of everything we do. We tailor our services to meet their unique needs, ensuring personalized attention and delivering results that exceed expectations. Satisfaction isn't just guaranteed—it's our standard."
     },
     {
       "id": 3,
-      "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45",
+      "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F8d5d86fc8d574a8eb62f5e526a8a72d1",
       "title": "Proven Expertise",
       "text": "With a team of seasoned professionals and a track record of successful projects across various industries, TechWizards Inc. stands as a beacon of reliability and expertise. Trust us to transform your tech challenges into seamless, scalable solutions."
     }
@@ -22,7 +22,7 @@
   "overview": {
     "title": "TechWizards Inc",
     "text": "TechWizards Inc. is a cutting-edge IT solutions company dedicated to driving digital transformation and empowering businesses with state-of-the-art technology. Founded on the principles of innovation, integrity, and excellence, we specialize in software development, cloud computing, and cybersecurity, ensuring our clients are always ahead in the digital race.",
-    "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+    "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F7beebe236e6a4e24a3a658a3a7523191"
   },
   "services": [
     {
@@ -50,7 +50,10 @@
       "title": "E-Commerce Platform for Fashion Retailer",
       "images": [
         {
-          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2Ffde20c7204f7485083d944fe7fbddd7a"
+        },
+        {
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2Fb380aaecf422471f84d4c88396798dc5"
         }
       ],
       "text": "Developed a scalable and user-friendly e-commerce platform for a leading fashion retailer, boosting their online sales by 40% within the first quarter."
@@ -60,13 +63,10 @@
       "title": "Healthcare Management System",
       "images": [
         {
-          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2Ff2a3d7042f4d4eaf94111c3ffc25d437"
         },
         {
-          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
-        },
-        {
-          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F1e53909fa9ec456b861b77c19b43e060"
         }
       ],
       "text": "Created an integrated healthcare management system for a network of clinics, streamlining patient records, appointment scheduling, and billing processes."
@@ -76,13 +76,13 @@
       "title": "AI-Driven Marketing Analytics Tool",
       "images": [
         {
-          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F9b5e1d9a3799424f83e0b09ee4e8bd46"
         },
         {
-          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F8ace107cd38d4e15ab4c5b468bc00580"
         },
         {
-          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F3b9aeab19a6a4e39907e299e1ef9ff28"
         }
       ],
       "text": "Implemented WizardAI for a global marketing agency, enabling them to harness data analytics to drive targeted campaigns and increase ROI by 25%."
@@ -92,13 +92,13 @@
       "title": "Secure Banking App",
       "images": [
         {
-          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F09d15ef4fea248ffb063c0f8ab8d47cb"
         },
         {
-          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F7cdf0ee133954032b79022377333bd82"
         },
         {
-          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F321fa376e2e44df7ada81e0b0f6deabb"
         }
       ],
       "text": "Launched a mobile banking app for a major financial institution, featuring enhanced security measures and a seamless user experience, significantly reducing fraud incidents."
@@ -108,13 +108,7 @@
       "title": "Cloud Migration for Manufacturing Firm",
       "images": [
         {
-          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
-        },
-        {
-          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
-        },
-        {
-          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F1e38eb264d284cc08f014aba45ed129f"
         }
       ],
       "text": "Facilitated a comprehensive cloud migration for a large manufacturing company, improving their operational efficiency and reducing IT costs by 30%."
@@ -124,13 +118,13 @@
       "title": "Blockchain-Based Supply Chain Solution",
       "images": [
         {
-          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F4d7cf76c84b24d3d8273ea0a760dc692"
         },
         {
-          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F9ff721b1ab3e4ccb96f165d4de8ecb4d"
         },
         {
-          "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45"
+          "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F2f6ab397e9454b72887edce18acbd9b8"
         }
       ],
       "text": "Developed a blockchain-based solution for a logistics company, ensuring transparency, traceability, and efficiency across their supply chain operations."
@@ -285,7 +279,7 @@
   },
   "about": {
     "title": "TechWizards Inc.",
-    "imageUrl": "https://cdn.builder.io/api/v1/file/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F611159a19f4d4755b122a9f26e102f45",
+    "imageUrl": "https://cdn.builder.io/api/v1/image/assets%2F30e3604c9ea247809c03511e4a9c5f3f%2F7beebe236e6a4e24a3a658a3a7523191",
     "description": "TechWizards Inc. is a cutting-edge IT solutions company dedicated to driving digital transformation and empowering businesses with state-of-the-art technology. Founded on the principles of innovation, integrity, and excellence, we specialize in software development, cloud computing, and cybersecurity, ensuring our clients are always ahead in the digital race.",
     "history": [
       {

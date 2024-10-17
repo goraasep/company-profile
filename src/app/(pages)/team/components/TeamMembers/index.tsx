@@ -21,7 +21,7 @@ const TeamMembers: FC = () => {
       {team.map((member) => (
         <div
           key={member.id}
-          className="shadow-xl flex flex-col  items-center justify-start p-10 rounded-lg gap-10 xl:gap-20 bg-white max-w-full "
+          className="shadow-xl flex flex-col  items-center justify-start p-10 rounded-lg gap-5 xl:gap-10 bg-white max-w-full "
         >
           <div className="bg-light-purple rounded-full p-1">
             <Image
@@ -36,9 +36,11 @@ const TeamMembers: FC = () => {
               className="max-w-[250px] max-h-[250px] aspect-square object-cover rounded-full border-8 border-light-blue"
             />
           </div>
+          <div className="">
+            <div className="font-bold text-xl text-center">{member.name}</div>
+            <div className="text-gray-500 text-center">{member.role}</div>
+          </div>
           <div className="flex flex-col gap-2">
-            <div className="font-bold text-xl">{member.name}</div>
-            <div className="text-gray-500">{member.role}</div>
             <div className="grid grid-cols-3 text-gray-500">
               <div>Address : </div>
               <div className="col-span-2 text-end">{member.address}</div>
