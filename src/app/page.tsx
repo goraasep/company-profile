@@ -2,7 +2,6 @@ import HeroCarousel from "@/app/components/HeroCarousel";
 import Overview from "@/app/components/Overview";
 import Services from "@/app/components/Services";
 import Projects from "@/app/components/Projects";
-// import Team from "@/app/components/Team";
 import Testimonial from "@/app/components/Testimonial";
 import ClientProvider from "@/providers/ClientProvider";
 
@@ -20,7 +19,6 @@ export default function Home() {
           <Overview />
           <Services />
           <Projects />
-          {/* <Team /> */}
           <Testimonial />
         </ClientProvider>
       </div>

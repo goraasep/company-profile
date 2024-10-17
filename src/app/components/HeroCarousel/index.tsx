@@ -6,7 +6,6 @@ import useHero from "@/hooks/useHero";
 
 const HeroCarousel: FC = () => {
   const { isLoading, error, heroes } = useHero();
-  // if (isLoading) return "Loading...";
 
   if (error) return "An error has occurred: " + error.message;
   if (!heroes || heroes.length === 0) return null;

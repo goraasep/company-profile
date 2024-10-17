@@ -1,6 +1,7 @@
 import { Service } from "@/constant/types";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
+import { useMemo } from "react";
 
 const fetchServices = async () => {
   const { data } = await axios.get(
@@ -9,7 +10,7 @@ const fetchServices = async () => {
   return data as Service[];
 };
 
-const useServices = () => {
+const useServices = (id?: number) => {
   const {
     isLoading,
     error,
@@ -20,10 +21,15 @@ const useServices = () => {
     staleTime: 60 * 1000,
     gcTime: 60 * 1000,
   });
+  const singleService: Service | null = useMemo(() => {
+    if (!services) return null;
+    return services.find((obj) => obj.id == id) as Service;
+  }, [services, id]);
   return {
     isLoading,
     error,
     services,
+    singleService,
   };
 };
 export default useServices;

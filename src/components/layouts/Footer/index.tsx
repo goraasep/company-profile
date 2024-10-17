@@ -35,7 +35,7 @@ const Footer: FC = () => {
                 className="w-[20px] h-[20px] text-light-purple"
                 icon={faCaretRight}
               />
-              <Link className=" hover:text-light-purple" href="/">
+              <Link className=" hover:text-light-purple" href="/about">
                 About
               </Link>
             </div>
@@ -44,7 +44,7 @@ const Footer: FC = () => {
                 className="w-[20px] h-[20px] text-light-purple"
                 icon={faCaretRight}
               />
-              <Link className=" hover:text-light-purple" href="/">
+              <Link className=" hover:text-light-purple" href="/service">
                 Service
               </Link>
             </div>
@@ -53,7 +53,7 @@ const Footer: FC = () => {
                 className="w-[20px] h-[20px] text-light-purple"
                 icon={faCaretRight}
               />
-              <Link className=" hover:text-light-purple" href="/">
+              <Link className=" hover:text-light-purple" href="/project">
                 Project
               </Link>
             </div>
@@ -62,7 +62,16 @@ const Footer: FC = () => {
                 className="w-[20px] h-[20px] text-light-purple"
                 icon={faCaretRight}
               />
-              <Link className=" hover:text-light-purple" href="/">
+              <Link className=" hover:text-light-purple" href="/team">
+                Team
+              </Link>
+            </div>
+            <div className="flex gap-2 items-center justify-start">
+              <FontAwesomeIcon
+                className="w-[20px] h-[20px] text-light-purple"
+                icon={faCaretRight}
+              />
+              <Link className=" hover:text-light-purple" href="/contact">
                 Contact
               </Link>
             </div>

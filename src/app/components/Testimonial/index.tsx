@@ -50,14 +50,12 @@ const Testimonial: FC = () => {
       <div className="py-10 w-full">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          // centeredSlides={true}
           centerInsufficientSlides={true}
           spaceBetween={0}
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
-          // loop={true}
           autoHeight={true}
           autoplay={{ delay: 2000 }}
           breakpoints={{

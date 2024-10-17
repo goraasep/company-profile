@@ -37,14 +37,12 @@ const Team: FC = () => {
       <div className="xl:mx-60 py-10">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          // centeredSlides={true}
           centerInsufficientSlides={true}
           spaceBetween={40}
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
-          // loop={true}
           autoHeight={true}
           autoplay={{ delay: 2000 }}
           breakpoints={{

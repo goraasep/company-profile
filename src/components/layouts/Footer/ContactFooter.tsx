@@ -10,7 +10,6 @@ import { FC } from "react";
 
 const ContactFooter: FC = () => {
   const { error, contact } = useContact();
-  // if (isLoading) return "Loading...";
 
   if (error) return "An error has occurred: " + error.message;
   if (!contact) return null;

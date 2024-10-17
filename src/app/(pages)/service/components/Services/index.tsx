@@ -16,7 +16,6 @@ const Services: FC = () => {
   if (error) return "An error has occurred: " + error.message;
   if (!services) return null;
   return (
-    // <div className="flex flex-col justify-start gap-10">
     <>
       {services.map((service) => (
         <div
@@ -35,7 +34,7 @@ const Services: FC = () => {
           <div className="flex flex-col items-start gap-4">
             <div className="font-bold text-3xl">{service.title}</div>
             <div>{truncateText(service.text, 30)}</div>
-            <Link href={`/service`}>
+            <Link href={`/service/${service.id}`}>
               <button className="bg-gradient-to-r from-light-blue to-light-purple  rounded-lg px-8 py-3 text-light-cyan font-medium">
                 Read More
               </button>
