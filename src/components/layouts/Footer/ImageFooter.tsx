@@ -12,7 +12,7 @@ const ImageFooter: FC = () => {
     <>
       <div className="flex gap-5 items-center">
         <Image src={contact.logoUrl} alt="logo" width={50} height={50}></Image>
-        <div className="text-light-cyan font-bold text-4xl">
+        <div className="text-light-cyan font-bold text-xl lg:text-4xl">
           {contact.companyName}
         </div>
       </div>
