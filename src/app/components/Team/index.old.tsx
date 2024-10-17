@@ -1,6 +1,10 @@
 "use client";
 import { FC } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import Link from "next/link";
+import { IconName, library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -9,17 +13,19 @@ import {
   A11y,
   Autoplay,
 } from "swiper/modules";
+import useTeam from "@/hooks/useTeam";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import useTeamRandom from "@/hooks/useTeamRandom";
-import randomRole from "@/utils/randomRole";
+// import useTeamRandom from "@/hooks/useTeamRandom";
+library.add(fab);
 const Team: FC = () => {
-  const { isLoading, error, teamRandom } = useTeamRandom();
+  const { isLoading, error, team } = useTeam();
+  // const { isLoading, error, teamRandom } = useTeamRandom();
   if (isLoading) return "Loading...";
 
   if (error) return "An error has occurred: " + error.message;
-  if (!teamRandom || teamRandom.length === 0) return null;
+  if (!team || team.length === 0) return null;
   return (
     <>
       <Swiper
@@ -44,14 +50,14 @@ const Team: FC = () => {
           },
         }}
       >
-        {teamRandom.map((member, index) => (
+        {team.map((member, index) => (
           <SwiperSlide key={index}>
-            <div className="shadow-xl flex flex-col items-center justify-center p-10 rounded-lg gap-4 bg-white max-w-full lg:max-w-[300px] mx-auto h-[300px]">
+            <div className="shadow-xl flex flex-col items-center justify-center p-10 rounded-lg gap-4 bg-white max-w-full lg:max-w-[300px] mx-auto">
               <div className="bg-light-purple rounded-full p-1">
                 <Image
                   src={
-                    member.picture.large
-                      ? member.picture.large
+                    member.imageUrl
+                      ? member.imageUrl
                       : "/images/default-profile.jpg"
                   }
                   alt="image 1"
@@ -61,9 +67,23 @@ const Team: FC = () => {
                 />
               </div>
               <div className="font-bold text-center text-xl">
-                {`${member.name.title} ${member.name.first} ${member.name.last}`}{" "}
+                {`${member.name}`}
               </div>
-              <div className="text-center text-gray-500">{randomRole()}</div>
+              <div className="text-center text-gray-500">{member.role}</div>
+              <div className="flex justify-between gap-3">
+                {member.socials.map((social, index) => (
+                  <Link
+                    key={index}
+                    href={social.url}
+                    className="text-light-purple w-[30px] h-[30px] text-center"
+                  >
+                    <FontAwesomeIcon
+                      className="text-light-purple w-[30px] h-[30px] text-center"
+                      icon={["fab", social.icon as IconName]}
+                    />
+                  </Link>
+                ))}
+              </div>
             </div>
           </SwiperSlide>
         ))}
