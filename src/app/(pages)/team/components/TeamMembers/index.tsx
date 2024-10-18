@@ -4,14 +4,19 @@ import { formatDate } from "@/utils/formatDate";
 import randomRole from "@/utils/randomRole";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { Button } from "@material-tailwind/react";
+import { Button, Spinner } from "@material-tailwind/react";
 import Image from "next/image";
 import { FC, useState } from "react";
 library.add(fab);
 const TeamMembers: FC = () => {
   const { isLoading, error, teamRandom } = useTeamRandom();
   const [count, setCount] = useState(2);
-  if (isLoading) return "Loading...";
+  if (isLoading)
+    return (
+      <div className="h-[100vh] lg:h-[50vh] flex items-center justify-center m-0 p-0">
+        <Spinner />
+      </div>
+    );
   if (error) return "An error has occurred: " + error.message;
   if (!teamRandom || teamRandom.length === 0) return null;
   const loadMore = () => {

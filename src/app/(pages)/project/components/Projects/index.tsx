@@ -2,13 +2,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FC, useState } from "react";
-import { Button, Carousel } from "@material-tailwind/react";
+import { Button, Carousel, Spinner } from "@material-tailwind/react";
 import useProjects from "@/hooks/useProjects";
 import truncateText from "@/utils/truncateText";
 const Projects: FC = () => {
   const { isLoading, error, projects } = useProjects();
   const [count, setCount] = useState(1);
-  if (isLoading) return "Loading...";
+  if (isLoading)
+    return (
+      <div className="h-[100vh] lg:h-[50vh] flex items-center justify-center m-0 p-0">
+        <Spinner />
+      </div>
+    );
 
   if (error) return "An error has occurred: " + error.message;
   if (!projects) return null;

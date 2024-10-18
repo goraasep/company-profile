@@ -1,12 +1,15 @@
 "use client";
 
 import useContact from "@/hooks/useContact";
+import { Spinner } from "@material-tailwind/react";
 import Image from "next/image";
 import { FC } from "react";
 
 export const ContactImage: FC = () => {
   const { isLoading, error, contact } = useContact();
-  if (isLoading) return "Loading...";
+  if (isLoading) {
+    return <Spinner />;
+  }
 
   if (error) return "An error has occurred: " + error.message;
   if (!contact) return null;
@@ -19,7 +22,9 @@ export const ContactImage: FC = () => {
 };
 export const ContactTitle: FC = () => {
   const { isLoading, error, contact } = useContact();
-  if (isLoading) return "Loading...";
+  if (isLoading) {
+    return <Spinner />;
+  }
 
   if (error) return "An error has occurred: " + error.message;
   if (!contact) return null;
@@ -32,7 +37,9 @@ export const ContactTitle: FC = () => {
 };
 export const ContactDescription: FC = () => {
   const { isLoading, error, contact } = useContact();
-  if (isLoading) return "Loading...";
+  if (isLoading) {
+    return <Spinner />;
+  }
 
   if (error) return "An error has occurred: " + error.message;
   if (!contact) return null;
@@ -46,7 +53,9 @@ export const ContactDescription: FC = () => {
 
 export const ContactAddress: FC = () => {
   const { isLoading, error, contact } = useContact();
-  if (isLoading) return "Loading...";
+  if (isLoading) {
+    return <Spinner />;
+  }
 
   if (error) return "An error has occurred: " + error.message;
   if (!contact) return null;
@@ -60,7 +69,9 @@ export const ContactAddress: FC = () => {
 
 export const ContactEmail: FC = () => {
   const { isLoading, error, contact } = useContact();
-  if (isLoading) return "Loading...";
+  if (isLoading) {
+    return <Spinner />;
+  }
 
   if (error) return "An error has occurred: " + error.message;
   if (!contact) return null;
@@ -74,7 +85,9 @@ export const ContactEmail: FC = () => {
 
 export const ContactPhone: FC = () => {
   const { isLoading, error, contact } = useContact();
-  if (isLoading) return "Loading...";
+  if (isLoading) {
+    return <Spinner />;
+  }
 
   if (error) return "An error has occurred: " + error.message;
   if (!contact) return null;

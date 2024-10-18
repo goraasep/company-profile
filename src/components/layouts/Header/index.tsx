@@ -17,11 +17,16 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import useContact from "@/hooks/useContact";
 
-import { Typography, IconButton, Collapse } from "@material-tailwind/react";
+import {
+  Typography,
+  IconButton,
+  Collapse,
+  Spinner,
+} from "@material-tailwind/react";
 
 const Header: FC = () => {
   const pathname = usePathname();
-  const { error, contact } = useContact();
+  const { isLoading, error, contact } = useContact();
   const [openNav, setOpenNav] = useState(false);
 
   useEffect(() => {
@@ -97,7 +102,12 @@ const Header: FC = () => {
       </Link>
     </ul>
   );
-  // if (isLoading) return "Loading...";
+  if (isLoading)
+    return (
+      <div className="h-[64px] flex items-center justify-center m-0 p-0">
+        <Spinner />
+      </div>
+    );
 
   if (error) return "An error has occurred: " + error.message;
   if (!contact) return null;

@@ -5,7 +5,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas, IconName } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button } from "@material-tailwind/react";
+import { Button, Spinner } from "@material-tailwind/react";
 import Link from "next/link";
 import { FC, useState } from "react";
 library.add(fas);
@@ -13,7 +13,12 @@ library.add(fab);
 const Services: FC = () => {
   const { isLoading, error, services } = useServices();
   const [count, setCount] = useState(2);
-  if (isLoading) return "Loading...";
+  if (isLoading)
+    return (
+      <div className="h-[100vh] lg:h-[50vh] flex items-center justify-center m-0 p-0">
+        <Spinner />
+      </div>
+    );
 
   if (error) return "An error has occurred: " + error.message;
   if (!services) return null;

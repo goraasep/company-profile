@@ -7,10 +7,17 @@ import { FC } from "react";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import { Spinner } from "@material-tailwind/react";
 library.add(fab);
 library.add(fas);
 const SocialsLink: FC = () => {
-  const { error, contact } = useContact();
+  const { isLoading, error, contact } = useContact();
+  if (isLoading)
+    return (
+      <div className="flex items-center justify-center m-0 p-0">
+        <Spinner />
+      </div>
+    );
   if (error) return "An error has occurred: " + error.message;
   if (!contact) return null;
   return (

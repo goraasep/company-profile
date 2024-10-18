@@ -1,11 +1,17 @@
 "use client";
 import useContact from "@/hooks/useContact";
+import { Spinner } from "@material-tailwind/react";
 import Image from "next/image";
 import { FC } from "react";
 
 const ImageFooter: FC = () => {
-  const { error, contact } = useContact();
-
+  const { isLoading, error, contact } = useContact();
+  if (isLoading)
+    return (
+      <div className="flex items-center justify-center m-0 p-0">
+        <Spinner />
+      </div>
+    );
   if (error) return "An error has occurred: " + error.message;
   if (!contact) return null;
   return (

@@ -6,11 +6,17 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Spinner } from "@material-tailwind/react";
 import { FC } from "react";
 
 const ContactFooter: FC = () => {
-  const { error, contact } = useContact();
-
+  const { isLoading, error, contact } = useContact();
+  if (isLoading)
+    return (
+      <div className="flex items-center justify-center m-0 p-0">
+        <Spinner />
+      </div>
+    );
   if (error) return "An error has occurred: " + error.message;
   if (!contact) return null;
   return (

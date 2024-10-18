@@ -1,6 +1,6 @@
 "use client";
 import useProjects from "@/hooks/useProjects";
-import { Carousel } from "@material-tailwind/react";
+import { Carousel, Spinner } from "@material-tailwind/react";
 import Image from "next/image";
 import { FC } from "react";
 
@@ -9,7 +9,12 @@ interface Props {
 }
 const Project: FC<Props> = ({ id }) => {
   const { isLoading, error, singleProject } = useProjects(parseInt(id));
-  if (isLoading) return "Loading...";
+  if (isLoading)
+    return (
+      <div className="h-[100vh] lg:h-[50vh] flex items-center justify-center m-0 p-0">
+        <Spinner />
+      </div>
+    );
   if (error) return "An error has occurred: " + error.message;
   if (!singleProject) return null;
 

@@ -37,7 +37,7 @@ export default function RootLayout({
             <Header />
           </div>
 
-          <div className="flex-grow h-full bg-light-cyan">{children}</div>
+          <div className="flex-grow bg-light-cyan">{children}</div>
           <Footer />
         </body>
       </ClientProvider>

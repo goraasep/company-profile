@@ -1,13 +1,18 @@
 "use client";
 import useAbout from "@/hooks/useAbout";
-import { Button } from "@material-tailwind/react";
+import { Button, Spinner } from "@material-tailwind/react";
 import Image from "next/image";
 import { FC, useState } from "react";
 
 export const History: FC = () => {
   const { isLoading, error, about } = useAbout();
   const [showHistory, setShowHistory] = useState(false);
-  if (isLoading) return "Loading...";
+  if (isLoading)
+    return (
+      <div className="flex items-center justify-center m-0 p-0">
+        <Spinner />
+      </div>
+    );
 
   if (error) return "An error has occurred: " + error.message;
   if (!about || !about.history) return null;
@@ -36,7 +41,12 @@ export const History: FC = () => {
 
 export const HistoryTitle: FC = () => {
   const { isLoading, error, about } = useAbout();
-  if (isLoading) return "Loading...";
+  if (isLoading)
+    return (
+      <div className="flex items-center justify-center m-0 p-0">
+        <Spinner />
+      </div>
+    );
 
   if (error) return "An error has occurred: " + error.message;
   if (!about) return null;
@@ -49,7 +59,12 @@ export const HistoryTitle: FC = () => {
 
 export const HistoryDescription: FC = () => {
   const { isLoading, error, about } = useAbout();
-  if (isLoading) return "Loading...";
+  if (isLoading)
+    return (
+      <div className="h-[300px] flex items-center justify-center m-0 p-0">
+        <Spinner />
+      </div>
+    );
 
   if (error) return "An error has occurred: " + error.message;
   if (!about) return null;
@@ -59,8 +74,11 @@ export const HistoryDescription: FC = () => {
 export const HistoryImage: FC = () => {
   const { isLoading, error, about } = useAbout();
   if (isLoading)
-    return <Image src="" alt="about" width={800} height={800} priority />;
-
+    return (
+      <div className="h-[300px] lg:h-[800px] flex items-center justify-center m-0 p-0">
+        <Spinner />
+      </div>
+    );
   if (error) return "An error has occurred: " + error.message;
   if (!about) return null;
   return (
