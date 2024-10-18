@@ -82,6 +82,12 @@ export const HistoryImage: FC = () => {
   if (error) return "An error has occurred: " + error.message;
   if (!about) return null;
   return (
-    <Image src={about.imageUrl} alt="about" width={800} height={800} priority />
+    <Image
+      src={about.imageUrl}
+      alt="about"
+      width={800}
+      height={800}
+      loading="lazy"
+    />
   );
 };
