@@ -19,6 +19,7 @@ const HeroCarousel: FC = () => {
             layout="fill"
             objectFit="cover"
             className="h-full w-full object-cover"
+            loading="lazy"
             priority
           />
           <div className="absolute inset-0 grid h-full w-full items-end bg-black/75">
