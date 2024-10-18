@@ -1,5 +1,4 @@
 import Team from "@/app/components/Team";
-import ClientProvider from "@/providers/ClientProvider";
 import { FC } from "react";
 import {
   History,
@@ -14,27 +13,19 @@ const About: FC = () => {
         <h1 className="text-3xl font-bold underline">About</h1>
       </div>
       <div className="px-5 md:px-20 flex flex-col justify-center items-center gap-10 py-10">
-        <ClientProvider>
-          <HistoryImage />
-        </ClientProvider>
+        <HistoryImage />
       </div>
       <div className="flex flex-col items-center">
         <div className="text-light-purple text-xl font-bold text-center">
           History
         </div>
-        <ClientProvider>
-          <HistoryTitle />
-        </ClientProvider>
+        <HistoryTitle />
       </div>
       <div className="flex flex-col gap-5 xl:px-60 py-10">
         <div className="text-justify indent-10 pb-5 px-5">
-          <ClientProvider>
-            <HistoryDescription />
-          </ClientProvider>
+          <HistoryDescription />
         </div>
-        <ClientProvider>
-          <History />
-        </ClientProvider>
+        <History />
       </div>
       <div className="px-5 md:px-20 flex flex-col gap-10 pb-20">
         <div className="flex flex-col items-center">
@@ -46,9 +37,7 @@ const About: FC = () => {
           </div>
         </div>
         <div className="xl:mx-60">
-          <ClientProvider>
-            <Team />
-          </ClientProvider>
+          <Team />
         </div>
       </div>
     </div>

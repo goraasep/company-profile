@@ -29,18 +29,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased flex flex-col justify-between min-h-[100vh]`}
-      >
-        <div className=" px-4 py-2 lg:px-8 lg:py-4 bg-gradient-to-r from-light-blue to-light-purple">
-          <ClientProvider>
+      <ClientProvider>
+        <body
+          className={`antialiased flex flex-col justify-between min-h-[100vh]`}
+        >
+          <div className=" px-4 py-2 lg:px-8 lg:py-4 bg-gradient-to-r from-light-blue to-light-purple">
             <Header />
-          </ClientProvider>
-        </div>
+          </div>
 
-        <div className="flex-grow h-full bg-light-cyan">{children}</div>
-        <Footer />
-      </body>
+          <div className="flex-grow h-full bg-light-cyan">{children}</div>
+          <Footer />
+        </body>
+      </ClientProvider>
     </html>
   );
 }

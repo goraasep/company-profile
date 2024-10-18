@@ -1,4 +1,3 @@
-import ClientProvider from "@/providers/ClientProvider";
 import {
   faEnvelope,
   faLocationDot,
@@ -25,19 +24,13 @@ const Contact: FC = () => {
       <div className="px-5 md:px-20 grid grid-cols-1 xl:grid-cols-2 gap-10 py-10">
         <div className="w-full shadow-xl flex flex-col items-start justify-start p-10 rounded-lg gap-5  bg-white">
           <div className="flex gap-5 items-center">
-            <ClientProvider>
-              <ContactImage />
-            </ClientProvider>
+            <ContactImage />
             <div className="font-bold text-4xl text-light-purple">
-              <ClientProvider>
-                <ContactTitle />
-              </ClientProvider>
+              <ContactTitle />
             </div>
           </div>
           <p>
-            <ClientProvider>
-              <ContactDescription />
-            </ClientProvider>
+            <ContactDescription />
           </p>
           <div className="flex gap-5 items-center justify-start w-full">
             <FontAwesomeIcon
@@ -45,9 +38,7 @@ const Contact: FC = () => {
               icon={faLocationDot}
             />
             <div className="text-justify">
-              <ClientProvider>
-                <ContactAddress />
-              </ClientProvider>
+              <ContactAddress />
             </div>
           </div>
           <hr className="bg-white w-full" />
@@ -57,9 +48,7 @@ const Contact: FC = () => {
               icon={faPhone}
             />
             <div>
-              <ClientProvider>
-                <ContactPhone />
-              </ClientProvider>
+              <ContactPhone />
             </div>
           </div>
           <hr className="bg-white w-full" />
@@ -69,9 +58,7 @@ const Contact: FC = () => {
               icon={faEnvelope}
             />
             <div>
-              <ClientProvider>
-                <ContactEmail />
-              </ClientProvider>
+              <ContactEmail />
             </div>
           </div>
           <hr className="bg-white w-full" />
@@ -80,9 +67,7 @@ const Contact: FC = () => {
           <div className="font-bold text-4xl text-light-purple">
             CONTACT US!
           </div>
-          <ClientProvider>
-            <ContactForm />
-          </ClientProvider>
+          <ContactForm />
         </div>
       </div>
     </div>

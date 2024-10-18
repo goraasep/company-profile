@@ -7,16 +7,13 @@ import ImageFooter from "./ImageFooter";
 import SocialsLink from "./SocialsLink";
 import ContactFooter from "./ContactFooter";
 import CopyrightFooter from "./CopyrightFooter";
-import ClientProvider from "@/providers/ClientProvider";
 
 const Footer: FC = () => {
   return (
     <div className="bg-black text-white px-20 py-10 flex flex-col gap-10">
       <div className="lg:grid lg:grid-cols-5 gap-10">
         <div className="col-span-2 ">
-          <ClientProvider>
-            <ImageFooter />
-          </ClientProvider>
+          <ImageFooter />
         </div>
         <div className="flex lg:items-center flex-col">
           <div className="text-light-purple">Short Links</div>
@@ -80,25 +77,17 @@ const Footer: FC = () => {
         <div className="flex lg:items-center flex-col">
           <div className="text-light-purple">Socials</div>
           <div className="flex flex-col gap-2 py-5 items-start">
-            <ClientProvider>
-              <SocialsLink />
-            </ClientProvider>
+            <SocialsLink />
           </div>
         </div>
-
         <div className="flex lg:items-center flex-col ">
           <div className="text-light-purple">Contact Us</div>
-
-          <ClientProvider>
-            <ContactFooter />
-          </ClientProvider>
+          <ContactFooter />
         </div>
       </div>
       <hr className="bg-white" />
       <div>
-        <ClientProvider>
-          <CopyrightFooter />
-        </ClientProvider>
+        <CopyrightFooter />
         <span className="text-light-blue">All rights reserved.</span>
       </div>
     </div>

@@ -1,5 +1,4 @@
 import Projects from "./components/Projects";
-import ClientProvider from "@/providers/ClientProvider";
 import { FC } from "react";
 
 const Project: FC = () => {
@@ -9,9 +8,7 @@ const Project: FC = () => {
         <h1 className="text-3xl font-bold underline">Project</h1>
       </div>
       <div className="px-5 md:px-20 flex flex-col justify-center items-center gap-10 py-10">
-        <ClientProvider>
-          <Projects />
-        </ClientProvider>
+        <Projects />
       </div>
     </div>
   );
