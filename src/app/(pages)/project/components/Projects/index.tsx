@@ -36,6 +36,7 @@ const Projects: FC = () => {
                 width={500}
                 height={300}
                 className="max-w-[500px] max-h-[300px] object-cover aspect-square"
+                loading="lazy"
               />
             ))}
           </Carousel>
