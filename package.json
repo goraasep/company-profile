@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "buildstart": "next build && next start"
   },
   "dependencies": {
     "@designbycode/tailwindcss-text-stroke": "^1.2.1",

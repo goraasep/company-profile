@@ -44,11 +44,7 @@ export const ContactDescription: FC = () => {
   if (error) return "An error has occurred: " + error.message;
   if (!contact) return null;
 
-  return (
-    <>
-      <span>{contact.description}</span>
-    </>
-  );
+  return <>{contact.description}</>;
 };
 
 export const ContactAddress: FC = () => {
