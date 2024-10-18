@@ -2,7 +2,7 @@ import { Contact } from "@/constant/types";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
-export const fetchContact = async () => {
+const fetchContact = async () => {
   const { data } = await axios.get(
     `${process.env.NEXT_PUBLIC_BACKEND_URL}contact`
   );

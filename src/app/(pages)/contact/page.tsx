@@ -8,18 +8,13 @@ import { FC } from "react";
 import ContactForm from "./components/ContactForm";
 import {
   ContactAddress,
-  // ContactDescription,
+  ContactDescription,
   ContactEmail,
   ContactImage,
   ContactPhone,
   ContactTitle,
 } from "./components/ContactInfo";
-import dynamic from "next/dynamic";
-const ContactDescription = dynamic(
-  () =>
-    import("./components/ContactInfo").then((mod) => mod.ContactDescription),
-  { ssr: false }
-);
+
 const Contact: FC = () => {
   return (
     <div className="bg-light-cyan">
@@ -34,9 +29,9 @@ const Contact: FC = () => {
               <ContactTitle />
             </div>
           </div>
-          <div>
+          <p>
             <ContactDescription />
-          </div>
+          </p>
           <div className="flex gap-5 items-center justify-start w-full">
             <FontAwesomeIcon
               className="w-[20px] h-[20px] text-light-purple shrink-0"
